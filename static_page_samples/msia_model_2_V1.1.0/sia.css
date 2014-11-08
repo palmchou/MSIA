@@ -1,0 +1,54 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#container{
+	margin-left: 50px;
+	margin-right: 50px;
+	background-color: #FFFFFF;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#title_bar{
+}
+
+#nav_bar{
+	text-align: center;
+	background-color: #428BCA;
+	color: #FFFFFF;
+}
+
+#example{
+	text-align: center;
+}
+
+#main1{
+	height: 300px;
+}
+
+#main2{
+	margin-top: 10px;
+}
+
+#slideshow{
+	height: 300px;
+}
+
+#association_info{
+	height: 300px;
+}
+
+#footer{
+	border-color: #87ACE9;
+	background-color: #87ACE9;
+}
+
+#f_address{
+	border-color: #87ACE9;
+	background-color: #428BCA;
+}
+
+#f_copyright{
+	border-color: #87ACE9;
+	background-color: #428BCA;
+}
