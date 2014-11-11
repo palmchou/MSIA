@@ -1,6 +1,47 @@
 .navbar .nav > li .dropdown-menu {
 	margin: 0;
 }
+
 .navbar .nav > li:hover .dropdown-menu {
 	display: block;
+}
+
+.msia-navbar{
+	margin-bottom: 0px;
+	margin-top: 20px;
+}
+
+.msia-logo{
+	padding-left: 30px; 
+	padding-right: 0px;
+}
+
+.msia-img-full{
+	width:100%;
+}
+
+.msia-title-right{
+	padding-top: 15px; 
+	padding-left: 0px;
+}
+
+.msia-title-left{
+	margin-right: -;
+	padding-right: 30px;
+}
+
+.msia-login{
+	margin-top: 5px; 
+	margin-right: 5px; 
+	margin-bottom: 15px;
+}
+
+.msia-CL{
+	margin-bottom: 0px; 
+	margin-top: 0px;
+}
+
+.msia-searchform{
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
