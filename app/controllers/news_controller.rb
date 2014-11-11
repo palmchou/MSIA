@@ -8,7 +8,7 @@ class NewsController < ApplicationController
   def industry
   end
 
-  def news
+  def index
 
   end
 end

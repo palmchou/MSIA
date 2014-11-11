@@ -10,11 +10,11 @@ Rails.application.routes.draw do
   end
   # Routes for news
   scope '/news' do
-    get '/', to: 'news#news', as: 'news'
     get 'notice', to: 'news#notice', as: 'news_notice'
     get 'msia', to: 'news#msia', as: 'news_msia'
     get 'industry', to: 'news#industry', as: 'news_industry'
   end
+  resources :news
 
   # Routes for recommend software products
   resources :recommendations

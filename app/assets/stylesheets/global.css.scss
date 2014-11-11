@@ -1,0 +1,30 @@
+.logo-container {
+  padding-left: 30px;
+  padding-right: 0px;
+  .site-logo {
+    width: 100%;
+  }
+}
+
+.head-container{
+  padding-top: 15px;
+  padding-left: 0px;
+}
+
+.corner-info{
+  padding-right: 30px;
+}
+
+.slides{
+  .item{
+    img{
+      width: 100%;
+    }
+  }
+}
+.navbar .nav > li .dropdown-menu {
+  margin: 0;
+}
+.navbar .nav > li:hover .dropdown-menu {
+  display: block;
+}
