@@ -7,4 +7,8 @@ class NewsController < ApplicationController
 
   def industry
   end
+
+  def news
+
+  end
 end
