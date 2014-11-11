@@ -21,13 +21,13 @@ Rails.application.routes.draw do
 
   # Routes for member services
   resources :members
-  get 'members/join-us', to: 'members#getJoin', as: 'members_join'
+  get 'members/join-us', to: 'members#get_join', as: 'members_join'
 
   # Routes for talents service
   resources :talents
 
   # Routes for friendly links
-  resources :links
+  resources :links, only: :index
 
   # Routes for contact us page
   get 'contact', to: 'home#contact', as: 'contact_us'
