@@ -1,15 +1,19 @@
 @charset "UTF-8";
 /* CSS Document */
 
+
+
 #container{
-	margin-left: 50px;
-	margin-right: 50px;
 	background-color: #FFFFFF;
-	padding-left: 5px;
-	padding-right: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	max-width: 950px;
+	display: run-in;
+	margin: 10px auto 10px auto;
 }
 
 #title_bar{
+	text-align: justify;
 }
 
 #nav_bar{
