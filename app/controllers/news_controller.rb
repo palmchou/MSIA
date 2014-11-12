@@ -1,4 +1,8 @@
 class NewsController < ApplicationController
+
+  def index
+  end
+
   def notice
   end
 
@@ -8,7 +12,4 @@ class NewsController < ApplicationController
   def industry
   end
 
-  def index
-
-  end
 end
