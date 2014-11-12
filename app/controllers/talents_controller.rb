@@ -4,6 +4,6 @@ class TalentsController < ApplicationController
   end
 
   def show
-
   end
+
 end

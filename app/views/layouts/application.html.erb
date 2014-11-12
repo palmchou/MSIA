@@ -12,46 +12,23 @@
   <meta name="author" content="">
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => false %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-
-  <!--link rel="stylesheet/less" href="less/bootstrap.less" type="text/css" /-->
-  <!--link rel="stylesheet/less" href="less/responsive.less" type="text/css" /-->
-  <!--script src="js/less-1.3.3.min.js"></script-->
-  <!--append ‘#!watch’ to the browser URL, then refresh the page. -->
-
-  <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
-  <!--<link href="css/style.css" rel="stylesheet">-->
-
-  <!--&lt;!&ndash; HTML5 shim, for IE6-8 support of HTML5 elements &ndash;&gt;-->
-  <!--&lt;!&ndash;[if lt IE 9]>-->
-  <!--<script src="js/html5shiv.js"></script>-->
-  <!--<![endif]&ndash;&gt;-->
-
-  <!-- Fav and touch icons -->
-  <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144-precomposed.png">-->
-  <!--<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114-precomposed.png">-->
-  <!--<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72-precomposed.png">-->
-  <!--<link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57-precomposed.png">-->
-  <!--<link rel="shortcut icon" href="img/favicon.png">-->
 </head>
 
 <body>
 <div class="container">
 <div class="row clearfix">
 <div class="col-md-12 column">
-  <nav class="navbar navbar-default" role="navigation" style="
-  margin-bottom: 0px;
-          margin-top: 20px;
-  ">
+  <nav class="navbar navbar-default msia-navbar" role="navigation">
     <div class="container">
       <div class="row clearfix">
         <div class="col-md-12 column">
           <div class="row clearfix">
-            <div class="col-md-2 column logo-container">
-              <%= image_tag 'msia_logo.png', class:'site-logo' %>
+            <div class="col-md-2 column msia-logo" >
+              <img  class="msia-img-full" src="assets/msia_slide.png"  />
             </div>
             <div class="col-md-10 column">
               <div class="row clearfix">
-                <div class="col-md-7 column head-container">
+                <div class="col-md-7 column msia-title-right" >
                   <h1>
                     <strong>
                       澳門軟件行業協會
@@ -61,28 +38,27 @@
                     MACAU SOFTWARRE INDUSTRY ASSOCIATION
                   </h4>
                 </div>
-                <div class="col-md-5 column corner-info">
-                  <p class="navbar-right navbar-text" style=" margin-top: 5px; margin-right: 5px; margin-bottom: 15px;">
+                <div class="col-md-5 column msia-title-left">
+                  <p class="navbar-right navbar-text msia-login" >
                     <a class="btn btn-link btn-sm" href="#" role="button">會員登錄</a>
                     <a class="btn bbtn-link btn-sm" href="#" role="button">會員註冊</a>
+
                   </p>
                   <br>
 
                   <br>
-                  <p class="navbar-text navbar-right" style=" margin-bottom: 0px; margin-top: 0px;">
+                  <p class="navbar-text navbar-right msia-CL" >
                     <a class="btn btn-link btn-sm" href="#" role="button">简体中文</a>
                     <a class="btn btn-link btn-sm" href="#" role="button">繁體中文</a>
                     <a class="btn btn-link btn-sm" href="#" role="button">English</a>
                   </p>
-                  <form class="navbar-form navbar-right" role="search" style="
-                  margin-top: 0px;
-                          margin-bottom: 0px;
-                  ">
+                  <form class="navbar-form navbar-right msia-searchform" role="search" >
                     <div class="form-group">
                       <input type="text" class="form-control" placeholder="Search">
                     </div>
                     <button type="submit" class="btn btn-default btn-sm">Submit</button>
                   </form>
+
                 </div>
               </div>
             </div>
@@ -98,7 +74,7 @@
 
 <div class="container">
   <div class="row clearfix">
-    <div class="col-md-8 column">
+    <div class="col-md-8 column content">
       <%= yield %>
     </div>
     <%= render 'layouts/sidebar' %>
