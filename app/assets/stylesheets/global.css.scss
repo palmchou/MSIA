@@ -71,3 +71,34 @@ body{
     color: white;
   }
 }
+
+.page-header{
+  margin-top: 20px;
+}
+
+.sidebar{
+  padding-left: 0;
+  .panel-heading, .list-group-item{
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+}
+
+.submenu{
+  margin-right: -15px;
+
+  .list-group-item{
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+  .list-group-item:first-child {
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+  }
+
+  .list-group-item:last-child {
+    margin-bottom: 0;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+  }
+}

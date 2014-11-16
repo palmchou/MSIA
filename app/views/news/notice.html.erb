@@ -1,35 +1,18 @@
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <h3 >
-      <strong>
-        公告通知
-      </strong>
-    </h3>
+<div class="col-xs-2">
+  <div class="submenu list-group">
+    <%= link_to '最新動態', about_info_path , class: 'list-group-item active'%>
+    <%= link_to '公告通知', about_info_path , class: 'list-group-item'%>
+    <%= link_to '協會新聞', about_info_path , class: 'list-group-item'%>
+    <%= link_to '行業新聞', about_info_path , class: 'list-group-item'%>
   </div>
-  <div class="panel-body">
-
-    <h3>
-      澳門軟件行業協會成立
-    </h3>
-    <p>
-      澳門軟件行業協會是一個非牟利的民間學術團體。英文名稱：Macau Software Industry Association，簡稱：澳門軟件協會，成立於2014年。 協會廣泛團結澳門從事軟件開發、研究、教育、應用、保護等領域的專業...
-    <p>
-      <a class="btn" href="#">View details »</a>
-    </p>
-
-
-    <h3>
-      澳门软件协会成员名单
-    </h3>
-    <p>
-      會  長：	劉超榮	（超群數碼科技總經理） 副會長：	劉碧亮	 黎健儒	（中國銀行科技部副總經理）理事長：	蔡智明	（澳門城市大學/科技大學教授，博導）副理事長：	林粵明	（澳門CTM公司高級經理） 柯  偉	（澳門...
-    </p>
-    <p>
-      <a class="btn" href="#">View details »</a>
-    </p>
-
-
-
-  </div>
-
 </div>
+<div class="col-xs-7">
+  <ol class="breadcrumb">
+    <li><%= link_to '首頁', root_path %></li>
+    <li class="active">最新動態</li>
+  </ol>
+  <div class="content">
+    <%= render 'layouts/news_list' %>
+  </div>
+</div>
+<%= render 'layouts/sidebar' %>

@@ -20,8 +20,9 @@ Rails.application.routes.draw do
   resources :recommendations
 
   # Routes for member services
-  resources :members
   get 'members/join-us', to: 'members#get_join', as: 'members_join'
+  resources :members
+
 
   # Routes for talents service
   resources :talents
