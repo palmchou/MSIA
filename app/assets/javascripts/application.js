@@ -11,10 +11,9 @@
 // about supported directives.
 //
 //= require jquery
-//= require bootstrap-sprockets
 //= require jquery_ujs
+//= require bootstrap-sprockets
 //= require turbolinks
-
 $(document).ready(function(){
     $(document).off('click.bs.dropdown.data-api');
 });

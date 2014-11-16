@@ -2,7 +2,6 @@ body{
   background-color: lightgray;
   .main{
     margin-top: 10px;
-    margin-bottom: 20px;
     background-color: white;
     border-radius: 4px;
   }
@@ -63,4 +62,12 @@ body{
 #logo{
   max-width: 100%;
   margin-top: 21px;
+}
+
+.footer{
+  background-image: url(/assets/copyright_bg.jpg);
+  .footer-content{
+    margin-top: 15px;
+    color: white;
+  }
 }

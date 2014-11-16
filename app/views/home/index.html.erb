@@ -1,77 +1,133 @@
-<div class="carousel slide" id="carousel-768281">
-  <ol class="carousel-indicators">
-    <li class="active" data-slide-to="0" data-target="#carousel-768281">
-    </li>
-    <li data-slide-to="1" data-target="#carousel-768281">
-    </li>
-    <li data-slide-to="2" data-target="#carousel-768281">
-    </li>
-  </ol>
-  <div class="carousel-inner slides">
-    <div class="item active">
-      <%= image_tag 'DSC05116.JPG' %>
-      <div class="carousel-caption">
-        <p>
-          澳門軟件行業協會活動1
-        </p>
+<div class="col-xs-12">
+  <div class="row">
+    <div class="col-xs-9">
+      <div id="carousel-slides" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-slides" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-slides" data-slide-to="1"></li>
+          <li data-target="#carousel-slides" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <%= image_tag 'DSC05114.JPG' %>
+            <div class="carousel-caption">
+              澳门软件行业协会
+            </div>
+          </div>
+          <div class="item">
+            <%= image_tag 'DSC05115.JPG' %>
+            <div class="carousel-caption">
+              澳门软件行业协会
+            </div>
+          </div>
+          <div class="item">
+            <%= image_tag 'DSC05116.JPG' %>
+            <div class="carousel-caption">
+              澳门软件行业协会
+            </div>
+          </div>
+        </div>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-slides" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-slides" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
     </div>
-    <div class="item">
-      <%= image_tag 'DSC05113.JPG' %>
-      <div class="carousel-caption">
-        <p>
-          澳門軟件行業協會活動2
-        </p>
+    <div class="col-xs-3 msia-info">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title text-center">
+            協會簡介
+          </h3>
+        </div>
+        <div class="panel-body">
+          澳門軟件行業協會是一個非牟利的民間學術團體。英文名稱：Macau Software Industry Association，簡稱：澳門軟件協會，成立於2014年。 協會廣泛團結澳門從事軟件開發、研究、教育、應用、保護等領域的專業人士及企業，通過市場調查、資訊交流、諮詢評估、行業自律、知識產權保護、資質認定、教育培訓、出版發布、政策研究、會議展覽等方面的工作，促進澳門軟件產業的健康發展。
+        </div>
       </div>
     </div>
-    <div class="item">
-      <%= image_tag 'DSC05114.JPG' %>
-      <div class="carousel-caption">
-
-        <p>
-          澳門軟件行業協會活動3
-        </p>
+  </div>
+  <div class="row">
+    <div class="col-xs-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading text-center">
+          <h3 class="panel-title"><%= link_to '公告通知', news_notice_path %></h3>
+        </div>
+        <ul class="list-group news-list">
+          <li class="list-group-item">
+            <span class="badge">2014.11.05</span>
+            <a href="#">GDG珠海線下活動 DevFest</a>
+          </li>
+          <li class="list-group-item">
+            <span class="badge">2014.11.06</span>
+            <a href="#">微軟公司 MUST 講座</a>
+          </li>
+          <li class="list-group-item">
+            <span class="badge">2014.11.06</span>
+            <a href="#">微軟公司 MUST 講座</a>
+          </li>
+          <li class="list-group-item">
+            &nbsp;
+            <%= link_to '更多資訊', news_notice_path, class: 'pull-right' %>
+          </li>
+        </ul>
       </div>
     </div>
-  </div> <a class="left carousel-control" href="#carousel-768281" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-768281" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-</div>
-
-
-<div class="tabbable" id="tabs-197818">
-  <ul class="nav nav-tabs nav-justified">
-    <li class="active">
-      <a href="#panel-607692" data-toggle="tab">活動資訊</a>
-    </li>
-    <li>
-      <a href="#panel-685955" data-toggle="tab">行業新聞</a>
-    </li>
-    <li>
-      <a href="#panel-685957" data-toggle="tab">公告通知</a>
-    </li>
-  </ul>
-  <div class="tab-content">
-    <div class="tab-pane active" id="panel-607692">
-      <ul class="list-group">
-        <li class="list-group-item">
-          <span class="badge">2014.11.04</span>
-          <a href="#">澳門2014軟件交流會</a></li>
-        <li class="list-group-item">
-          <span class="badge">2014.11.05</span>
-          <a href="#">GDG珠海線下活動</a></li>
-        <li class="list-group-item">
-          <span class="badge">2014.11.06</span>
-          <a href="#">Google香港介紹會</a></li>
-      </ul>
+    <div class="col-xs-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading text-center">
+          <h3 class="panel-title"><%= link_to '公告通知', news_notice_path %></h3>
+        </div>
+        <ul class="list-group news-list">
+          <li class="list-group-item">
+            <span class="badge">2014.11.05</span>
+            <a href="#">GDG珠海線下活動 DevFest</a>
+          </li>
+          <li class="list-group-item">
+            <span class="badge">2014.11.06</span>
+            <a href="#">微軟公司 MUST 講座</a>
+          </li>
+          <li class="list-group-item">
+            <span class="badge">2014.11.06</span>
+            <a href="#">微軟公司 MUST 講座</a>
+          </li>
+          <li class="list-group-item">
+            &nbsp;
+            <%= link_to '更多資訊', news_notice_path, class: 'pull-right' %>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="tab-pane" id="panel-685955">
-      <p>
-        Howdy, I'm in Section 2.
-      </p>
-    </div>
-    <div class="tab-pane" id="panel-685957">
-      <p>
-        Howdy, I'm in Section 3.
-      </p>
+    <div class="col-xs-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading text-center">
+          <h3 class="panel-title"><%= link_to '公告通知', news_notice_path %></h3>
+        </div>
+        <ul class="list-group news-list">
+          <li class="list-group-item">
+            <span class="badge">2014.11.05</span>
+            <a href="#">GDG珠海線下活動 DevFest</a>
+          </li>
+          <li class="list-group-item">
+            <span class="badge">2014.11.06</span>
+            <a href="#">微軟公司 MUST 講座</a>
+          </li>
+          <li class="list-group-item">
+            <span class="badge">2014.11.06</span>
+            <a href="#">微軟公司 MUST 講座</a>
+          </li>
+          <li class="list-group-item">
+            &nbsp;
+            <%= link_to '更多資訊', news_notice_path, class: 'pull-right' %>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>
