@@ -12,8 +12,7 @@ gem 'mysql2', '~>0.3.16'
 
 # Front-end gems
 # - use bootstrap as front-end framework
-gem 'rails-bootstrap', '~> 3.0.0.4'
-gem 'bootstrap-sass', '3.2.0.2'
+gem 'bootstrap-sass', '~> 3.3.0'
 # - Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # - Use Uglifier as compressor for JavaScript assets

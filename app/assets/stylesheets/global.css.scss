@@ -1,78 +1,66 @@
-.logo-container {
-  padding-left: 30px;
-  padding-right: 0px;
-  .site-logo {
-    width: 100%;
+body{
+  background-color: lightgray;
+  .main{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 4px;
+  }
+  .container{
+    width: 970px !important;
   }
 }
 
-.head-container{
-  padding-top: 15px;
-  padding-left: 0px;
+.logo-container{
+  height: 98px;
 }
 
-.corner-info{
-  padding-right: 30px;
+
+
+.msia-navbar{
+  background-color: skyblue;
+  margin-bottom: 20px;
+  .nav .open > a,
+  .nav .open > a:hover, .nav .open > a:focus {
+    background-color: #abe7ee;
+    border-color: #428bca;
+  }
+  .nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: #abe7ee;
+  }
+  .nav > li > a {
+    color: #000000;
+  }
+  .nav > li .dropdown-menu {
+    margin: 0;
+  }
+
+  .nav > li:hover .dropdown-menu {
+    display: block;
+  }
+
 }
 
-.slides{
-  .item{
-    img{
-      width: 100%;
+.dropdown-menu {
+  margin: 0px 0 0;
+  list-style: none;
+  font-size: 14px;
+  text-align: center;
+  background-color: #abe7ee;
+  border: 0;
+  border-radius: 1px;
+  min-width: 125px;
+  li{
+    width: 134px;
+    a:hover, .dropdown-menu > li > a:focus {
+      text-decoration: none;
+      color: #262626;
+      background-color: lightblue;
     }
   }
 }
-.navbar .nav > li .dropdown-menu {
-  margin: 0;
-}
-.navbar .nav > li:hover .dropdown-menu {
-  display: block;
-}
-
-.navbar .nav > li .dropdown-menu {
-  margin: 0;
-}
-
-.navbar .nav > li:hover .dropdown-menu {
-  display: block;
-}
-
-.msia-navbar{
-  margin-bottom: 0px;
-  margin-top: 20px;
-}
-
-.msia-logo{
-  padding-left: 30px;
-  padding-right: 0px;
-}
-
-.msia-img-full{
-  width:100%;
-}
-
-.msia-title-right{
-  padding-top: 15px;
-  padding-left: 0px;
-}
-
-.msia-title-left{
-
-  padding-right: 30px;
-}
-
-p.msia-login{
-  margin-top: 5px;
-  margin-right: 5px;
-  margin-bottom: 15px;
-}
-
-p.msia-CL{
-  margin-bottom: 0px;
-  margin-top: 0px;
-}
-
-form.msia-searchform{
-  margin-top: 0px;
-  margin-bottom: 0px;
+#logo{
+  max-width: 100%;
+  margin-top: 21px;
 }

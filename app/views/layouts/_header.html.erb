@@ -1,0 +1,27 @@
+  <div class="row">
+    <div class="col-md-2 logo-container">
+      <%= image_tag 'logo.png', id: 'logo'%>
+    </div>
+    <div class="col-md-5 title">
+      <h1><strong>澳門軟件行業協會</strong></h1>
+      <h4>Macau Software Industry Association</h4>
+    </div>
+    <div class="col-md-5 column">
+    <ul class="list-inline navbar-right navbar-text" style=" margin-top: 10px; margin-right: 10px; ">
+      <li>
+        <a class="btn-xs" href="#"><span class="badge">簡</span></a>
+        <a class="btn-xs" href="#"><span class="badge">繁</span></a>
+        <a class="btn-xs" href="#"><span class="badge">EN</span></a>
+      </li>
+      <li><a class="btn btn-link" href="#" role="button">登入</a></li>
+      <li><a class="btn bbtn-link" href="#" role="button">註冊</a></li>
+    </ul>
+    <form class="navbar-form navbar-right" role="search">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search">
+      </div>
+    <button type="submit" class="btn btn-info">搜索</button>
+    </form>
+    </div>
+  </div>
+  <%= render 'layouts/nav' %>
