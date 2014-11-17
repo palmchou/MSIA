@@ -1,3 +1,4 @@
+<% without = nil if without.nil? %>
 <div class="sidebar col-xs-3">
   <div class="panel panel-default">
     <div class="panel-heading">
@@ -17,6 +18,7 @@
       </li>
     </ul>
   </div>
+  <% unless without == :links %>
   <div class="panel panel-default">
     <div class="panel-heading">
       <h3 class="panel-title">
@@ -29,9 +31,10 @@
       <li class="list-group-item"><a href="http://www.macauit.com" target="_blank">MIT超群科技網絡有限公司</a></li>
     </ul>
   </div>
+  <% end %>
 
+  <% unless without == :contact %>
   <div class="panel panel-default">
-
     <div class="panel-heading">
       <h3 class="panel-title">
         聯繫我們
@@ -44,4 +47,5 @@
       電郵: azure_214@hotmail.com
     </div>
   </div>
+  <% end %>
 </div>

@@ -1,6 +1,6 @@
 class MembersController < ApplicationController
-  def get_join
-  p 'render'
+  def new
+
   end
 
   def index
@@ -9,5 +9,13 @@ class MembersController < ApplicationController
 
   def show
 
+  end
+
+  def forum
+
+  end
+
+  def login
+    
   end
 end

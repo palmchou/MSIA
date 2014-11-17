@@ -17,10 +17,11 @@ Rails.application.routes.draw do
   resources :news
 
   # Routes for recommend software products
-  resources :recommendations
+  # resources :recommendations
 
   # Routes for member services
-  get 'members/join-us', to: 'members#get_join', as: 'members_join'
+  get 'members/login', to: 'members#login', as: 'members_login'
+  get 'members/forum', to: 'members#forum', as: 'members_forum'
   resources :members
 
 

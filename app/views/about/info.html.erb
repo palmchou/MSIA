@@ -1,22 +1,23 @@
 <div class="col-xs-2">
   <div class="submenu list-group">
-    <%= link_to '協會簡介', about_info_path , class: 'list-group-item'%>
-    <%= link_to '協會簡介', about_info_path , class: 'list-group-item'%>
     <%= link_to '協會簡介', about_info_path , class: 'list-group-item active'%>
+    <%= link_to '組織架構', about_structure_path , class: 'list-group-item'%>
+    <%= link_to '協會宗旨', about_purpose_path , class: 'list-group-item'%>
   </div>
 </div>
 <div class="col-xs-7">
   <ol class="breadcrumb">
     <li><%= link_to '首頁', root_path %></li>
-    <li><a href="#">關於協會</a></li>
+    <li><%= link_to '關於協會', about_info_path %></li>
     <li class="active">協會簡介</li>
   </ol>
   <div class="content">
     <div class="page-header">
-      <h1>協會簡介</h1>
+      <h2>協會簡介</h2>
     </div>
     <h4>簡介</h4>
     <p>澳門軟件行業協會是一個非牟利的民間學術團體。英文名稱：Macau Software Industry Association，簡稱：澳門軟件行業協會，成立於2014年。</p>
+    <h4>宗旨</h4>
     <p>協會廣泛團結澳門從事軟件開發、研究、教育、應用、保護等領域的專業人士及企業，通過市場調查、資訊交流、諮詢評估、行業自律、知識產權保護、資質認定、教育培訓、出版發布、政策研究、會議展覽等方面的工作，促進澳門軟件產業的健康發展。</p>
     <h4>目標</h4>
     <p>（一）發展澳門軟件產業，開拓國際軟件市場，推動經濟適度多元發展；加强澳門與國際軟件行業的合作、聯繫和交流；加速澳門軟件產品產業化、軟件企業國際化以及智慧城市建設。</p>
