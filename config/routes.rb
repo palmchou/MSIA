@@ -13,6 +13,13 @@ Rails.application.routes.draw do
     get 'notice', to: 'news#notice', as: 'news_notice'
     get 'msia', to: 'news#msia', as: 'news_msia'
     get 'industry', to: 'news#industry', as: 'news_industry'
+    get '1', to: 'news#news1', as: 'news_1'
+    get '2', to: 'news#news2', as: 'news_2'
+    get '3', to: 'news#news3', as: 'news_3'
+    get '4', to: 'news#news4', as: 'news_4'
+    get '5', to: 'news#news5', as: 'news_5'
+    get '6', to: 'news#news6', as: 'news_6'
+    get '7', to: 'news#news7', as: 'news_7'
   end
   resources :news
 
