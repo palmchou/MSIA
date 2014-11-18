@@ -7,13 +7,17 @@
   </div>
 </div>
 <div class="col-xs-7">
+  <div class="create-topic-button pull-right">
+    <a href="#" class="btn btn-success" role="button">發佈新話題</a>
+  </div>
   <ol class="breadcrumb">
     <li><%= link_to '首頁', root_path %></li>
     <li><%= link_to '會員專區', new_member_path %></li>
     <li class="active">會員討論區</li>
   </ol>
   <div class="content">
-    <%= render 'layouts/news_list' %>
+
+    <%= render 'shared/topic_list' %>
   </div>
 </div>
 <%= render 'layouts/sidebar' %>
