@@ -1,41 +1,14 @@
 <div class="news-list msia-list">
   <div class="news-list-item msia-list-item">
-    <div class="news-list-item msia-list-item">
-      <h4><%= link_to '微軟完成1.8人裁員計劃', news_2_path %></h4>
-      <span class="badge pull-right">2014-11-18</span>
-      <p class="brief">微軟完成7月份宣佈的裁員計劃。...</p>
-    </div>
-    <h4><%= link_to 'PyCon 2014大會將在5城市舉行', news_3_path %></h4>
-    <span class="badge pull-right">2014-11-13</span>
-    <p class="brief">迄今為止最大規模。...</p>
-  </div>
-  <div class="news-list-item msia-list-item">
-    <h4><%= link_to '深港澳首度聯手做軟件', news_5_path %></h4>
-    <span class="badge pull-right">2014-10-27</span>
-    <p class="brief">深圳信息軟件協會、香港軟件協會與澳門生產力暨科技轉移中心聯合簽署「深港澳信息科技產業」戰略合作協議」...</p>
-  </div>
-  <div class="news-list-item msia-list-item">
-    <h4><%= link_to '中國Hpocon 2014將在上海舉辦', news_4_path %></h4>
-    <span class="badge pull-right">2014-10-15</span>
-    <p class="brief">關注架構與運維。...</p>
-  </div>
-  <div class="news-list-item msia-list-item">
-    <h4><%= link_to '協會捐款賑濟滇災民', news_6_path %></h4>
-    <span class="badge pull-right">2014-08-16</span>
-    <p class="brief">為支援雲南省昭通市魯甸縣地震災區災民，繼續有團體向中聯辦捐款。...</p>
-  </div>
-  <div class="news-list-item msia-list-item">
-    <h4><%= link_to '澳門軟件行業協會成立', news_1_path %></h4>
-    <span class="badge pull-right">2014-07-25</span>
-    <p class="brief">澳門軟件行業協會是一個非牟利的民間學術團體。...</p>
+    <% @news.each do |n| %>
+      <div class="news-list-item msia-list-item">
+        <h4><%= link_to n.title, n  %></h4>
+        <span class="badge pull-right"><%= n.created_at.to_date %></span>
+        <p class="brief"><%= n.brief %></p>
+      </div>
+    <% end %>
   </div>
 </div>
 <nav>
-  <ul class="pagination">
-    <li class="disabled"><a href="#">上一頁</a></li>
-    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
-    <li><a href="#">2</a></li>
-    <li><a href="#">3</a></li>
-    <li><a href="#">后一頁</a></li>
-  </ul>
+  <%= will_paginate @news, renderer: BootstrapPagination::Rails, next_lable: '下一頁', previous_labele: '上一頁' %>
 </nav>

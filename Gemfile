@@ -24,6 +24,9 @@ gem 'jquery-rails', '~> 3.1.2'
 # - Use simple-form for creating simple forms
 gem 'simple_form', '~> 3.1.0.rc2',  github: 'plataformatec/simple_form', branch: 'master'
 
+gem 'will_paginate', '~> 3.0.6'
+gem 'will_paginate-bootstrap', '1.0.1'
+
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
 
@@ -39,6 +42,12 @@ gem 'bcrypt-ruby', '3.1.5'
 
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
+
+# User System
+gem 'devise', '~> 3.4.0'
+
+# Chinese conversion
+gem 'ropencc'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

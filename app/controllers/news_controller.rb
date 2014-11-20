@@ -1,39 +1,23 @@
 class NewsController < ApplicationController
 
   def index
+    @news = News.order(created_at: :desc).paginated(current_page)
   end
 
   def notice
+    @news = News.notice_news.paginated(current_page)
   end
 
   def msia
+    @news = News.msia_news.paginated(current_page)
   end
 
   def industry
+    @news = News.industry_news.paginated(current_page)
   end
 
-  def news1
-
+  def show
+    @news = News.find_by_id(params[:id])
   end
-  def news2
-
-  end
-  def news3
-
-  end
-  def news4
-
-  end
-  def news5
-
-  end
-  def news6
-
-  end
-  
-  def news7
-
-  end
-
 
 end
