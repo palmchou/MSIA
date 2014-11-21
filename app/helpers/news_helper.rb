@@ -3,6 +3,4 @@ module NewsHelper
     return 'list-group-item active' if n.cate == cate
     'list-group-item'
   end
-
-
 end

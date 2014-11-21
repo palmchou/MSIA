@@ -7,21 +7,11 @@
       </h3>
     </div>
     <ul class="list-group">
-      <li class="list-group-item">
-        <%= link_to 'PyCon 14大會將在5城市舉行', news_3_path %>
-      </li>
-      <li class="list-group-item">
-        <%= link_to '深港澳首度聯手做軟件', news_5_path %>
-      </li>
-      <li class="list-group-item">
-        <%= link_to 'Hpocon 2014將在上海舉辦', news_4_path %>
-      </li>
-      <li class="list-group-item">
-        <%= link_to '協會捐款賑濟滇災民', news_6_path %>
-      </li>
-      <li class="list-group-item">
-        <%= link_to '澳門軟件行業協會成立', '#' %>
-      </li>
+      <% @side_news.each do |n| %>
+        <li class="list-group-item">
+          <%= link_to n.title, n %>
+        </li>
+      <% end %>
     </ul>
   </div>
   <% unless without == :links %>

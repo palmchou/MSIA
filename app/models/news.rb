@@ -1,4 +1,5 @@
 class News < ActiveRecord::Base
+  include ActionView::Helpers::SanitizeHelper
 
   validates :cate, :title, :content, presence: true
   validates :cate, inclusion: { in: 1..3, message: '請選擇正確的資訊類型。' }
@@ -7,6 +8,7 @@ class News < ActiveRecord::Base
   NOTICE = 1
   MSIA = 2
   INDUSTRY = 3
+  BRIEF_LENGTH = 55
 
 
   def self.news_per_page
@@ -42,10 +44,11 @@ class News < ActiveRecord::Base
   end
 
   def brief
-    if self.content.length <= 30
+    content = strip_tags(self.content)
+    if content.length <= BRIEF_LENGTH
       self.content
     else
-      self.content[0, 30] + '...'
+      content[0, BRIEF_LENGTH] + '...'
     end
   end
 end
