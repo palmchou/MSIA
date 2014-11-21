@@ -9,6 +9,10 @@
 ### Database creation & initialization
 run `rake db:migrate:reset && rake db:setup` to initialize the database.
 
+### The Chinese converter libopencc
+We ues ropencc gem to implement Chinese conversion, so you must install the libopencc on your computer.
+To do so, you can follow [ropencc's instruction](https://github.com/Psli/ropencc).
+
 ### Things should know before you contribute
 1. You must commit with a **commit message**. Both English or Chinese you can use as the language in your commit message.
 but you can't use Chinese in comments in codes.
