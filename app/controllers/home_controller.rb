@@ -10,6 +10,11 @@ class HomeController < ApplicationController
   end
 
   def contact
-    
+    address = MsiaInfo.find_by_slug('address')
+    tel = MsiaInfo.find_by_slug('tel')
+    fax = MsiaInfo.find_by_slug('fax')
+    mail = MsiaInfo.find_by_slug('mail')
+
+    @contact_infos = {address: address, tel: tel, fax: fax, mail: mail}
   end
 end

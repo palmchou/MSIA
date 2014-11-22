@@ -11,7 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141122093140) do
+ActiveRecord::Schema.define(version: 20141122134445) do
+
+  create_table "links", force: true do |t|
+    t.string "url",   limit: 127, null: false
+    t.string "title", limit: 127, null: false
+  end
 
   create_table "members", force: true do |t|
     t.string   "email",                  default: "", null: false
@@ -30,6 +35,14 @@ ActiveRecord::Schema.define(version: 20141122093140) do
   add_index "members", ["confirmation_token"], name: "index_members_on_confirmation_token", unique: true, using: :btree
   add_index "members", ["email"], name: "index_members_on_email", unique: true, using: :btree
   add_index "members", ["reset_password_token"], name: "index_members_on_reset_password_token", unique: true, using: :btree
+
+  create_table "msia_infos", id: false, force: true do |t|
+    t.string "slug",    limit: 10,  null: false
+    t.string "info",    limit: 127, null: false
+    t.text   "content",             null: false
+  end
+
+  add_index "msia_infos", ["slug"], name: "index_msia_infos_on_slug", using: :btree
 
   create_table "news", force: true do |t|
     t.datetime "created_at"
