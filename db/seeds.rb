@@ -9,3 +9,7 @@
 data = YAML::load_file('db/data.yml')
 
 News.create(data['news'])
+
+Link.create(data['links'])
+
+MsiaInfo.create(data['msiaInfo'])

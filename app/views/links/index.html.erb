@@ -12,18 +12,11 @@
     <div class="page-header">
       <h2><%= t :friendly_link%></h2>
     </div>
-    <div class='link'>
-      <a href="http://www.csia.org.cn" target="_blank">中国软件行业协会</a>
-    </div>
-    <div class='link'>
-      <a href="http://www.hksia.hk" target="_blank">香港軟件行業協會</a>
-    </div>
-    <div class='link'>
-      <a href="http://www.macauit.com" target="_blank">MIT超群科技網絡有限公司</a>
-    </div>
+    <% @links.each do |l| %>
     <div class="link">
-      <a href="http://www.iproa.org" target="_blank">互聯網專業協會</a>
+      <%= link_to l.title, l.url, target: '_blank' %>
     </div>
+    <% end %>
   </div>
 </div>
 <%= render 'layouts/sidebar',:without => :links %>
