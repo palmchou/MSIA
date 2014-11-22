@@ -19,12 +19,13 @@ Rails.application.routes.draw do
   # Routes for recommend software products
   # resources :recommendations
 
-  devise_for :users
+  devise_for :members, controllers: { sessions: "members/sessions",
+                                      registrations: "members/registrations" },
+             path_names: { sign_in: 'login', sign_out: 'logout', sign_up: 'new' }
 
   # Routes for member services
-  get 'members/login', to: 'members#login', as: 'members_login'
   get 'members/forum', to: 'members#forum', as: 'members_forum'
-  resources :members
+  get 'members/index', to: 'members#index', as: 'members'
 
 
   # Routes for talents service

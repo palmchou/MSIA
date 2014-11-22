@@ -1,5 +1,18 @@
 <% without = nil if without.nil? %>
 <div class="sidebar col-xs-3">
+
+  <% if current_page?(new_member_session_path) %>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"><%= t :help_info %></h3>
+      </div>
+      <div class="panel-body">
+        <%= render 'devise/shared/links' %>
+      </div>
+    </div>
+  <% end %>
+
+  <%# news panel %>
   <div class="panel panel-default">
     <div class="panel-heading">
       <h3 class="panel-title">
@@ -14,7 +27,11 @@
       <% end %>
     </ul>
   </div>
-  <% unless without == :links %>
+  <%# end of news panel %>
+
+
+
+  <% unless current_page?(links_path) %>
   <div class="panel panel-default">
     <div class="panel-heading">
       <h3 class="panel-title">
@@ -29,7 +46,8 @@
   </div>
   <% end %>
 
-  <% unless without == :contact %>
+  <%# contact us panel %>
+  <% unless current_page?(contact_us_path) %>
   <div class="panel panel-default">
     <div class="panel-heading">
       <h3 class="panel-title">

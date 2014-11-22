@@ -14,8 +14,8 @@
         <a class="btn-xs" href=<%= '/?locale=zh_CN' %>><span class="badge">簡</span></a>
         <a class="btn-xs" href=<%= '/?locale=zh_TW' %>><span class="badge">繁</span></a>
       </li>
-      <li><%= link_to '登入', members_login_path, class: 'btn btn-link' %></li>
-      <li><%= link_to '註冊', new_member_path, class: 'btn btn-link' %></li>
+      <li><%= link_to '登入', new_member_session_path, class: 'btn btn-link' %></li>
+      <li><%= link_to '註冊', new_member_registration_path, class: 'btn btn-link' %></li>
     </ul>
     <form class="navbar-form navbar-right" role="search">
       <div class="form-group">
