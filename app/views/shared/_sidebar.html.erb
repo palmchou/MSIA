@@ -52,10 +52,9 @@
       </h3>
     </div>
     <div class="panel-body">
-      地址: 澳門宋玉生廣場322﹣362號成豐商業中心5樓A<br/>
-      電話: (853) 2850 8193<br/>
-      傳真: (853) 2857 5206<br/>
-      電郵: azure_214@hotmail.com
+      <% @global_info[:contact_infos].each do |c| %>
+        <%= "#{c.info}: #{c.content}" %><%== '<br>' %>
+      <% end %>
     </div>
   </div>
 <% end %>

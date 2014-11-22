@@ -12,8 +12,7 @@
   <h2><%= t :contact_us %></h2>
 </div>
 <div class="contact-content">
-  <p><%= "#{@contact_infos[:address].info}: #{@contact_infos[:address].content}"%></p>
-  <p><%= "#{@contact_infos[:tel].info}: #{@contact_infos[:tel].content}"%></p>
-  <p><%= "#{@contact_infos[:fax].info}: #{@contact_infos[:fax].content}"%></p>
-  <p><%= "#{@contact_infos[:mail].info}: #{@contact_infos[:mail].content}"%></p>
+  <% @global_info[:contact_infos].each do |c| %>
+    <p><%= "#{c.info}: #{c.content}" %></p>
+  <% end %>
 </div>
