@@ -35,11 +35,11 @@ class News < ActiveRecord::Base
   def cate_for_human
     case self.cate
       when NOTICE
-        '公告通知'
+        :msia_notify
       when MSIA
-        '協會新聞'
+        :msia_news
       when INDUSTRY
-        '行業新聞'
+        :industry_news
     end
   end
 

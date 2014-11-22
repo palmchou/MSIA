@@ -1,37 +1,34 @@
-<% without = nil if without.nil? %>
-<div class="sidebar col-xs-3">
-
-  <% if current_page?(new_member_session_path) %>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h3 class="panel-title"><%= t :help_info %></h3>
-      </div>
-      <div class="panel-body">
-        <%= render 'devise/shared/links' %>
-      </div>
-    </div>
-  <% end %>
-
-  <%# news panel %>
+<% if current_controller?('registrations') || current_controller?('sessions') || current_controller?('passwords') || current_controller?('confirmations') %>
   <div class="panel panel-default">
     <div class="panel-heading">
-      <h3 class="panel-title">
-        <%= link_to (t :latest_news), news_index_path %>
-      </h3>
+      <h3 class="panel-title"><%= t :help_info %></h3>
     </div>
-    <ul class="list-group">
-      <% @side_news.each do |n| %>
-        <li class="list-group-item">
-          <%= link_to n.title, n %>
-        </li>
-      <% end %>
-    </ul>
+    <div class="panel-body">
+      <%= render 'devise/shared/links' %>
+    </div>
   </div>
-  <%# end of news panel %>
+<% end %>
+
+<%# news panel %>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">
+      <%= link_to (t :latest_news), news_index_path %>
+    </h3>
+  </div>
+  <ul class="list-group">
+    <% @global_info[:news].each do |n| %>
+      <li class="list-group-item">
+        <%= link_to n.title, n %>
+      </li>
+    <% end %>
+  </ul>
+</div>
+<%# end of news panel %>
 
 
 
-  <% unless current_page?(links_path) %>
+<% unless current_page?(links_path) %>
   <div class="panel panel-default">
     <div class="panel-heading">
       <h3 class="panel-title">
@@ -44,10 +41,10 @@
       <li class="list-group-item"><a href="http://www.macauit.com" target="_blank">MIT超群科技網絡有限公司</a></li>
     </ul>
   </div>
-  <% end %>
+<% end %>
 
-  <%# contact us panel %>
-  <% unless current_page?(contact_us_path) %>
+<%# contact us panel %>
+<% unless current_page?(contact_us_path) %>
   <div class="panel panel-default">
     <div class="panel-heading">
       <h3 class="panel-title">
@@ -61,5 +58,4 @@
       電郵: azure_214@hotmail.com
     </div>
   </div>
-  <% end %>
-</div>
+<% end %>

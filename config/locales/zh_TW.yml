@@ -1,15 +1,19 @@
 zh_TW:
   msia_title: "澳門軟件行業協會"
   search: "搜尋"
+
+  home_page: "主頁"
+
+  about_msia: "關於協會"
   introduction: "協會簡介"
   structure: "組織架構"
   msia_aim: "協會宗旨"
+
+  latest_news: "最新動態"
   msia_notify: "公告通知"
   msia_news: "協會新聞"
   industry_news: "行業新聞"
-  about_msia: "關於協會"
-  home_page: "主頁"
-  latest_news: "最新動態"
+
   members_area: "會員專區"
   recruit: "人才服務"
   friendly_link: "友情鏈接"

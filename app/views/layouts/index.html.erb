@@ -23,22 +23,7 @@
   </div>
   <%= render 'layouts/alart' %>
   <div class="row">
-    <div class="col-xs-2">
-      <div class="submenu list-group">
-        <%= yield(:sub_menu) %>
-      </div>
-    </div>
-    <div class="col-xs-7">
-      <ol class="breadcrumb">
-        <%= yield(:breadcrumb) %>
-      </ol>
-      <div class="content">
-        <%= yield %>
-      </div>
-    </div>
-    <div class="col-xs-3 sidebar">
-      <%= render 'shared/sidebar' %>
-    </div>
+    <%= yield %>
   </div>
   <div class="row">
     <div class="col-xs-12 footer">

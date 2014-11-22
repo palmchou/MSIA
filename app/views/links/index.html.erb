@@ -1,22 +1,17 @@
-<div class="col-xs-2">
-  <div class="submenu list-group">
-    <%= link_to (t :friendly_link), links_path , class: 'list-group-item active'%>
-  </div>
+<% content_for :sub_menu do %>
+  <%= link_to (t :friendly_link), links_path , class: 'list-group-item active'%>
+<% end %>
+
+<% content_for :breadcrumb do %>
+  <li><%= link_to (t :home_page), root_path %></li>
+  <li class="active"><%= t :friendly_link%></li>
+<% end %>
+
+<div class="page-header">
+  <h2><%= t :friendly_link%></h2>
 </div>
-<div class="col-xs-7">
-  <ol class="breadcrumb">
-    <li><%= link_to (t :home_page), root_path %></li>
-    <li class="active"><%= t :friendly_link%></li>
-  </ol>
-  <div class="content">
-    <div class="page-header">
-      <h2><%= t :friendly_link%></h2>
-    </div>
-    <% @links.each do |l| %>
-    <div class="link">
-      <%= link_to l.title, l.url, target: '_blank' %>
-    </div>
-    <% end %>
-  </div>
+<% @links.each do |l| %>
+<div class="link">
+  <%= link_to l.title, l.url, target: '_blank' %>
 </div>
-<%= render 'layouts/sidebar',:without => :links %>
+<% end %>

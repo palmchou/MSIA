@@ -24,6 +24,9 @@ gem 'jquery-rails', '~> 3.1.2'
 # - Use simple-form for creating simple forms
 gem 'simple_form', '~> 3.1.0.rc2',  github: 'plataformatec/simple_form', branch: 'master'
 
+# - breadcrumbs
+gem 'breadcrumbs_on_rails'
+
 gem 'will_paginate', '~> 3.0.6'
 gem 'will_paginate-bootstrap', '1.0.1'
 

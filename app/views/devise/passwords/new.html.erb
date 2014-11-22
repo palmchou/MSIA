@@ -1,15 +1,23 @@
-<h2>Forgot your password?</h2>
-
-<%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
-  <%= f.error_notification %>
-
-  <div class="form-inputs">
-    <%= f.input :email, required: true, autofocus: true %>
-  </div>
-
-  <div class="form-actions">
-    <%= f.button :submit, "Send me reset password instructions" %>
-  </div>
+<% content_for :sub_menu do %>
+  <%= link_to '加入我們', new_member_registration_path, class: 'list-group-item' %>
+  <%= link_to '會員登入', new_member_session_path, class: 'list-group-item' %>
+  <%= link_to '會員名單', members_path, class: 'list-group-item' %>
+  <%= link_to '會員討論區', members_forum_path, class: 'list-group-item' %>
 <% end %>
 
-<%= render "devise/shared/links" %>
+<% content_for :breadcrumb do %>
+  <li><%= link_to (t :home_page), root_path %></li>
+  <li><%= link_to (t :members_area), new_member_registration_path %></li>
+  <li class="active">忘記密碼</li>
+<% end %>
+
+<div class="page-header"><h2>密碼找回</h2></div>
+<%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post, class: 'form-horizontal', role: 'from' }, wrapper: :horizontal_form) do |f| %>
+  <%= f.error_notification %>
+  <%= f.input :email, required: true, autofocus: true %>
+  <div class="form-group">
+    <div class="col-xs-offset-4 col-xs-3">
+      <%= f.button :submit, "发送密码找回邮件至我的邮箱" %>
+    </div>
+  </div>
+<% end %>

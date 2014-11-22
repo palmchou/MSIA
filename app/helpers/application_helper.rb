@@ -6,5 +6,12 @@ module ApplicationHelper
     content_for :page_title, content_tag(:title, title)
   end
 
+  def current_controller?(names)
+    names == controller_name
+  end
+
+  def current_path
+    request.path
+  end
 
 end

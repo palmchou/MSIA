@@ -1,4 +1,6 @@
 class HomeController < ApplicationController
+  layout 'index', only: :index
+
   def index
     notice_news = News.notice_news.limit(3)
     msia_news = News.msia_news.limit(3)
