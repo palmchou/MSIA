@@ -6,7 +6,7 @@
   <% if content_for?(:title) %>
       <%= yield(:title) %>
   <% else %>
-      <title>澳門軟件行業協會</title>
+      <title><%= t :msia_title %></title>
   <% end %>
   <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
   <%= stylesheet_link_tag 'application', 'data-turbolinks-track' => false %>

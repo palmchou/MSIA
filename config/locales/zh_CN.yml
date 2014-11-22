@@ -1,4 +1,21 @@
 zh_CN:
+  msia_title: "澳门软件行业协会"
+  search: "搜索"
+  introduction: "协会简介"
+  structure: "组织架构"
+  msia_aim: "协会宗旨"
+  msia_notify: "公告通知"
+  msia_news: "协会新闻"
+  industry_news: "行业新闻"
+  about_msia: "关于协会"
+  home_page: "主页"
+  latest_news: "最新动态"
+  members_area: "会员专区"
+  recruit: "人才服务"
+  friendly_link: "友情链接"
+  contact_us: "联系我们"
+
+  more_info: "更多资讯"
   will_paginate:
     previous_label: "上一页"
     next_label: "下一页"
