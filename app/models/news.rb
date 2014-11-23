@@ -10,6 +10,16 @@ class News < ActiveRecord::Base
   INDUSTRY = 3
   BRIEF_LENGTH = 55
 
+  rails_admin do
+    configure :news do
+      label 'Owner of this ball: '
+    end
+  end
+
+  def news
+
+  end
+
 
   def self.news_per_page
     10
@@ -51,4 +61,6 @@ class News < ActiveRecord::Base
       content[0, BRIEF_LENGTH] + '...'
     end
   end
+
+
 end

@@ -48,6 +48,9 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 # User System
 gem 'devise', '~> 3.4.0'
+gem 'cancan', '~> 1.6.10'
+
+gem 'rails_admin', '~> 0.6.5'
 
 # Chinese conversion
 gem 'ropencc'
