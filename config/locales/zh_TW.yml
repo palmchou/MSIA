@@ -19,6 +19,12 @@ zh_TW:
   friendly_link: "友情鏈接"
   contact_us: "聯繫我們"
   help_info: "幫助"
+  about_me: "您好，%{name}"
+  my_info: "我的資料"
+  modify_profile: "修改資料"
+
+
+  log_out: "登出"
 
   more_info: "更多資訊"
   will_paginate:

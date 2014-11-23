@@ -15,6 +15,10 @@ zh_CN:
   friendly_link: "友情链接"
   contact_us: "联系我们"
   help_info: "帮助"
+  about_me: "您好，%{name}"
+  log_out: "登出"
+  my_info: "我的资料"
+  modify_profile: "修改资料"
 
   more_info: "更多资讯"
   will_paginate:

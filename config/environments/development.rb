@@ -13,9 +13,21 @@ Rails.application.configure do
   config.consider_all_requests_local       = true
   config.action_controller.perform_caching = false
 
-  # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = false
 
+  # Care if the mailer can't send.
+  config.action_mailer.raise_delivery_errors = true
+
+  config.action_mailer.delivery_method = :smtp
+  # config.action_mailer.default_options = {from: '澳門軟件行業協會<test@msia.com>'}
+  config.action_mailer.default_options = {from: 'macau_sia@163.com'}
+  config.action_mailer.smtp_settings = {
+      address:              'smtp.163.com',
+      port:                 25,
+      domain:               'example.com',
+      user_name:            'macau_sia@163.com',
+      password:             '123456q',
+      authentication:       'plain',
+      enable_starttls_auto: false  }
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
   # Print deprecation notices to the Rails logger.

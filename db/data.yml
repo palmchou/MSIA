@@ -108,3 +108,9 @@ msiaInfo:
   - slug: "mail"
     info: "電郵"
     content: "azure_214@hotmail.com"
+
+members:
+  - email: "admin@msia.com"
+    password: "123456"
+    confirmation_sent_at: "2014-11-23 07:49:04"
+    confirmed_at: "2014-11-23 07:49:10"
