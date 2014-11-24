@@ -1,6 +1,10 @@
 zh-TW:
   msia_title: "澳門軟件行業協會"
   search: "搜尋"
+  simple: "簡"
+  unsimple: "繁"
+  login: "登入"
+  register: "註冊"
 
   home_page: "主頁"
 
@@ -15,6 +19,23 @@ zh-TW:
   industry_news: "行業新聞"
 
   members_area: "會員專區"
+  join_us: "加入我們"
+  newmember_info: "填寫表單，當即註冊成為普通會員，獲取最新資訊。"
+  newmember_ordownload: "或下載相應表格，跟隨指引註冊成為正式會員。"
+  newmember_p: "個人入會登記表"
+  newmember_o: "團體（單位）入會登記表"
+  member_login: "會員登入"
+  member_list: "會員名單"
+  discuss: "會員討論區"
+  new_topic: "發佈新話題"
+  confirmation: "郵件確認"
+  resent: "重新發送確認郵件"
+  reset_password: "密码重置"
+  foget_password: "忘記密碼"
+  retrieve_password: "找回密碼"
+  sent_email_to_retrieve_password: "發送密碼找回郵件至我的郵箱"
+
+
   recruit: "人才服務"
   friendly_link: "友情鏈接"
   contact_us: "聯繫我們"
@@ -27,6 +48,10 @@ zh-TW:
   log_out: "登出"
 
   more_info: "更多資訊"
+
+  previous_label: "上一頁"
+  next_label: "下一頁"
+
   will_paginate:
     previous_label: "上一頁"
     next_label: "下一頁"

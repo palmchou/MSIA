@@ -11,11 +11,11 @@
     <div class="col-md-5 column">
     <ul class="list-inline navbar-right navbar-text" style=" margin-top: 10px; margin-right: 10px; ">
       <li>
-        <a class="btn-xs" href=<%= "#{current_path}?locale=zh-CN" %>><span class="badge">簡</span></a>
-        <a class="btn-xs" href=<%= "#{current_path}?locale=zh-TW" %>><span class="badge">繁</span></a>
+        <a class="btn-xs" href=<%= "#{current_path}?locale=zh-CN" %>><span class="badge"><%= t :simple %></span></a>
+        <a class="btn-xs" href=<%= "#{current_path}?locale=zh-TW" %>><span class="badge"><%= t :unsimple %></span></a>
       </li>
-      <li><%= link_to '登入', new_member_session_path, class: 'btn btn-link' %></li>
-      <li><%= link_to '註冊', new_member_registration_path, class: 'btn btn-link' %></li>
+      <li><%= link_to (t :login), new_member_session_path, class: 'btn btn-link' %></li>
+      <li><%= link_to (t :register), new_member_registration_path, class: 'btn btn-link' %></li>
     </ul>
     <form class="navbar-form navbar-right" role="search">
       <div class="form-group">

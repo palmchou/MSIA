@@ -22,11 +22,11 @@
         <a href=<%= smart_url_for_member_service %> class="dropdown-toggle" data-toggle="dropdown"><%= t :members_area %></a>
         <ul class="dropdown-menu">
           <% unless member_signed_in? %>
-            <li><%= link_to '加入我們', new_member_registration_path %></li>
-            <li><%= link_to '會員登入', new_member_session_path %></li>
+            <li><%= link_to (t :join_us), new_member_registration_path %></li>
+            <li><%= link_to (t :member_login), new_member_session_path %></li>
           <% end %>
-          <li><%= link_to '會員名單', members_path %></li>
-          <li><%= link_to '會員討論區', members_forum_path %></li>
+          <li><%= link_to (t :member_list), members_path %></li>
+          <li><%= link_to (t :discuss), members_forum_path %></li>
         </ul>
       </li>
       <li><%= link_to (t :recruit), talents_path %></li>
