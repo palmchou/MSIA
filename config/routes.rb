@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   root 'home#index'
 
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+  mount Ckeditor::Engine => '/ckeditor'
+
 
 
   devise_for :members, controllers: { sessions: "members/sessions",

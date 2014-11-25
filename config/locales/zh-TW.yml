@@ -59,8 +59,8 @@ zh-TW:
   activerecord:
     models:
       news:
-        one: '最新动态'
-        other: '最新动态'
+        one: '最新動態'
+        other: '最新動態'
       msia_info:
         one: '協會資料'
         other: '協會資料'
@@ -78,4 +78,4 @@ zh-TW:
     help:
       news:
         cate: "%{help} 设为 1 代表公告通知，2 代表协会新闻，3 代表行业新闻。"
-        content: "%{help} 支持简单 html 标签。"
+        content: "%{help} 支持简单 html 标签。圖片寬度請勿超過480px。"

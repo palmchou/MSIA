@@ -51,6 +51,8 @@ gem 'devise', '~> 3.4.0'
 gem 'cancan', '~> 1.6.10'
 
 gem 'rails_admin', '~> 0.6.5'
+gem 'ckeditor', github: 'galetahub/ckeditor', branch: 'master'
+gem 'paperclip', '~> 4.2.0'
 
 # Chinese conversion
 gem 'ropencc'

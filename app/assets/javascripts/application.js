@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require bootstrap-sprockets
 //= require turbolinks
+//= require ckeditor/init
 $(document).ready(function(){
     $(document).off('click.bs.dropdown.data-api');
 });
