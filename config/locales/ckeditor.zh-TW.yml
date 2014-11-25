@@ -1,0 +1,9 @@
+zh-TW:
+  ckeditor:
+    page_title: 'CKEditor Files Manager'
+    confirm_delete: '確認刪除？'
+    buttons:
+      cancel: '刪除'
+      upload: '上載'
+      delete: '刪除'
+      next: '下一個'

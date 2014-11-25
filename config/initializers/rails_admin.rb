@@ -21,6 +21,8 @@ RailsAdmin.config do |config|
 
   ### More at https://github.com/sferik/rails_admin/wiki/Base-configuration
 
+  config.included_models = ['Link', 'Member', 'MsiaInfo', 'News']
+
   config.actions do
     dashboard                     # mandatory
     index                         # mandatory
@@ -41,6 +43,10 @@ RailsAdmin.config do |config|
     list do
       field :name
       field :content
+    end
+    edit do
+      field :name
+      field :content, :ck_editor
     end
   end
 
@@ -76,8 +82,7 @@ RailsAdmin.config do |config|
           ['1', '2', '3']
         end
       end
-      field :content
-      field :created_at
+      field :content, :ck_editor
     end
   end
 end

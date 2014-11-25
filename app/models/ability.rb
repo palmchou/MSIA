@@ -4,11 +4,16 @@ class Ability
   def initialize(user)
 
     can :read, :all                   # allow everyone to read everything
+    can :access, :ckeditor   # needed to access Ckeditor filebrowser
+
     if user && user.admin?
       can :access, :rails_admin
       can :dashboard
       can :manage, :all
+      can [:read, :create, :destroy], Ckeditor::Picture
+      can [:read, :create, :destroy], Ckeditor::AttachmentFile
     end
+
     # if user && user.admin?
     #   can :access, :rails_admin       # only allow admin users to access Rails Admin
     #   can :dashboard                  # allow access to dashboard

@@ -26,6 +26,12 @@ module MacauSoftwareIndustryAssociation
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     config.i18n.default_locale = 'zh-TW'
+    # Autoload ckeditor models folder
+    config.autoload_paths += %W(#{config.root}/app/models/ckeditor)
+
+    #
+    config.action_view.sanitized_allowed_tags = 'table', 'thead', 'tbody', 'tr', 'td', 'u', 's'
+    config.action_view.sanitized_allowed_attributes = ['id', 'class', 'style']
   end
 end
 I18n.config.enforce_available_locales = false

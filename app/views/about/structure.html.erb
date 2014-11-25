@@ -11,4 +11,4 @@
 <div class="page-header">
   <h2><%= t :structure %></h2>
 </div>
-<%== @structure.content %>
+<%= sanitize(@structure.content) %>
