@@ -94,23 +94,23 @@ links:
 
 msiaInfo:
   - slug: "address"
-    info: "地址"
+    name: "地址"
     content: "澳門宋玉生廣場322﹣362號成豐商業中心5樓A"
 
   - slug: "tel"
-    info: "電話"
+    name: "電話"
     content: "(853) 2850 8193"
 
   - slug: "fax"
-    info: "傳真"
+    name: "傳真"
     content: "(853) 2857 5206"
 
   - slug: "mail"
-    info: "電郵"
+    name: "電郵"
     content: "azure_214@hotmail.com"
 
   - slug: "info"
-    info: "協會簡介"
+    name: "協會簡介"
     content: "<p>簡介</p>
 
               <p>澳門軟件行業協會是一個非牟利的民間學術團體。英文名稱：Macau Software Industry Association，簡稱：澳門軟件行業協會，成立於2014年。</p>
@@ -128,7 +128,7 @@ msiaInfo:
               <p>（三）協助政府相關部門制定、修改、貫徹本行業的本地標準和專業標準。完善和貫徹執行與軟件知識産權保護相關的法律法規。</p>"
 
   - slug: "structure"
-    info: "組織架構"
+    name: "組織架構"
     content: "<table class=\"table table-hover table-striped\">
                               <tbody>
                               <tr>
@@ -206,7 +206,7 @@ msiaInfo:
                               </table>"
 
   - slug: "purpose"
-    info: "協會宗旨"
+    name: "協會宗旨"
     content: "<p>廣泛團結澳門從事軟件開發、研究、應用、保護等領域的專業人士及企業， 通過市場調查、資訊交流、諮詢評估、行業自律、知識產權保護、資質認定、出版發佈、 教育培訓、會議展覽、政策研究等方面的工作，促進澳門軟件產業的健康發展。</p>"
 
 members:

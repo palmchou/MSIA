@@ -2,7 +2,7 @@
   <% if index_page? %>
     <p>
       <% @global_info[:contact_infos].each do |c| %>
-        <%= "#{c.info}: #{c.content}" %>
+        <%= "#{c.name}: #{c.content}" %>
       <% end %>
     </p>
   <% end %>

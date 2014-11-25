@@ -2,7 +2,7 @@ class CreateMsiaInfos < ActiveRecord::Migration
   def change
     create_table :msia_infos  do |t|
       t.string :slug, null: false, limit: 10
-      t.string :info, null: false, limit: 127
+      t.string :name, null: false, limit: 127
       t.text :content, null: false
     end
 

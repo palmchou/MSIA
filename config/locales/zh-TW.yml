@@ -55,3 +55,27 @@ zh-TW:
   will_paginate:
     previous_label: "上一頁"
     next_label: "下一頁"
+
+  activerecord:
+    models:
+      news:
+        one: '最新动态'
+        other: '最新动态'
+      msia_info:
+        one: '協會資料'
+        other: '協會資料'
+      link:
+        one: '友情鏈接'
+        other: '友情鏈接'
+      member:
+        one: '會員'
+        other: '會員'
+    attributes:
+          news:
+            cate: "新聞分類"
+
+  admin:
+    help:
+      news:
+        cate: "%{help} 设为 1 代表公告通知，2 代表协会新闻，3 代表行业新闻。"
+        content: "%{help} 支持简单 html 标签。"

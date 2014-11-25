@@ -39,7 +39,7 @@ ActiveRecord::Schema.define(version: 20141123180539) do
 
   create_table "msia_infos", force: true do |t|
     t.string "slug",    limit: 10,  null: false
-    t.string "info",    limit: 127, null: false
+    t.string "name",    limit: 127, null: false
     t.text   "content",             null: false
   end
 

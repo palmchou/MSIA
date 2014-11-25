@@ -10,17 +10,6 @@ class News < ActiveRecord::Base
   INDUSTRY = 3
   BRIEF_LENGTH = 55
 
-  rails_admin do
-    configure :news do
-      label 'Owner of this ball: '
-    end
-  end
-
-  def news
-
-  end
-
-
   def self.news_per_page
     10
   end
@@ -55,10 +44,10 @@ class News < ActiveRecord::Base
 
   def brief
     content = strip_tags(self.content)
-    if content.length <= BRIEF_LENGTH
-      self.content
-    else
+    if content.length > BRIEF_LENGTH
       content[0, BRIEF_LENGTH] + '...'
+    else
+      content
     end
   end
 
