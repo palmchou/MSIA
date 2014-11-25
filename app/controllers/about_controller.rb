@@ -1,4 +1,5 @@
 class AboutController < ApplicationController
+  before_action :global_info
   def info
     @info = MsiaInfo.find_by_slug('info')
   end

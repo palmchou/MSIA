@@ -1,5 +1,7 @@
 class HomeController < ApplicationController
   layout 'index', only: :index
+  before_action :global_info
+
 
   def index
     notice_news = News.notice_news.limit(3)

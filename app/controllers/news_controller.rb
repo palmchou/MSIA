@@ -1,5 +1,7 @@
 class NewsController < ApplicationController
 
+  before_action :global_info
+
   def index
     @news = News.order(created_at: :desc).paginated(current_page)
   end

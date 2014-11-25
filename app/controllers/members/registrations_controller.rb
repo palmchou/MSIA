@@ -1,4 +1,6 @@
 class Members::RegistrationsController < Devise::RegistrationsController
+  before_action :global_info
+
 # before_filter :configure_sign_up_params, only: [:create]
 # before_filter :configure_account_update_params, only: [:update]
 
@@ -57,4 +59,17 @@ class Members::RegistrationsController < Devise::RegistrationsController
   # def after_inactive_sign_up_path_for(resource)
   #   super(resource)
   # end
+  def global_info
+    news = News.order(created_at: :desc).limit(5)
+
+    address = MsiaInfo.find_by_slug('address')
+    tel = MsiaInfo.find_by_slug('tel')
+    fax = MsiaInfo.find_by_slug('fax')
+    mail = MsiaInfo.find_by_slug('mail')
+
+
+    contact_infos = [address, tel, fax, mail]
+
+    @global_info = { news: news, contact_infos: contact_infos }
+  end
 end

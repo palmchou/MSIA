@@ -80,5 +80,4 @@ RailsAdmin.config do |config|
       field :created_at
     end
   end
-
 end
