@@ -17,3 +17,30 @@
 <% end %>
 
 <%= render "devise/shared/links" %>
+
+<% content_for :sub_menu do %>
+  <%= link_to (t :join_us), new_member_registration_path, class: 'list-group-item' %>
+  <%= link_to (t :member_login), new_member_session_path, class: 'list-group-item' %>
+  <%= link_to (t :member_list), members_path, class: 'list-group-item' %>
+  <%= link_to (t :discuss), members_forum_path, class: 'list-group-item' %>
+<% end %>
+
+<% content_for :breadcrumb do %>
+  <li><%= link_to (t :home_page), root_path %></li>
+  <li><%= link_to (t :members_area), new_member_registration_path %></li>
+  <li class="active"><%= t :reset_password %></li>
+<% end %>
+
+<div class="page-header"><h2><%= t :reset_password %></h2></div>
+<%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put, class: 'form-horizontal', role: 'from' }, wrapper: :horizontal_form) do |f| %>
+  <%= f.error_notification %>
+  <%= f.input :reset_password_token, as: :hidden %>
+  <%= f.full_error :reset_password_token %>
+  <%= f.input :password, label: "New password", required: true, autofocus: true %>
+    <%= f.input :password_confirmation, label: "Confirm your new password", required: true %>
+  <div class="form-group">
+    <div class="col-xs-offset-4 col-xs-3">
+      <%= f.button :submit, "Change my password" %>
+    </div>
+  </div>
+<% end %>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141122134445) do
+ActiveRecord::Schema.define(version: 20141123180539) do
 
   create_table "links", force: true do |t|
     t.string "url",   limit: 127, null: false
@@ -30,15 +30,16 @@ ActiveRecord::Schema.define(version: 20141122134445) do
     t.string   "unconfirmed_email"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "role"
   end
 
   add_index "members", ["confirmation_token"], name: "index_members_on_confirmation_token", unique: true, using: :btree
   add_index "members", ["email"], name: "index_members_on_email", unique: true, using: :btree
   add_index "members", ["reset_password_token"], name: "index_members_on_reset_password_token", unique: true, using: :btree
 
-  create_table "msia_infos", id: false, force: true do |t|
+  create_table "msia_infos", force: true do |t|
     t.string "slug",    limit: 10,  null: false
-    t.string "info",    limit: 127, null: false
+    t.string "name",    limit: 127, null: false
     t.text   "content",             null: false
   end
 

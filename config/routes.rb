@@ -1,6 +1,14 @@
 Rails.application.routes.draw do
 
+
   root 'home#index'
+
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+
+
+  devise_for :members, controllers: { sessions: "members/sessions",
+                                      registrations: "members/registrations" },
+             path_names: { sign_in: 'login', sign_out: 'logout', sign_up: 'new' }
 
   # Routes for about
   scope '/about' do
@@ -19,13 +27,12 @@ Rails.application.routes.draw do
   # Routes for recommend software products
   # resources :recommendations
 
-  devise_for :members, controllers: { sessions: "members/sessions",
-                                      registrations: "members/registrations" },
-             path_names: { sign_in: 'login', sign_out: 'logout', sign_up: 'new' }
+
 
   # Routes for member services
   get 'members/forum', to: 'members#forum', as: 'members_forum'
   get 'members/index', to: 'members#index', as: 'members'
+  get 'member/:id', to: 'members#show', as: 'member'
 
 
   # Routes for talents service

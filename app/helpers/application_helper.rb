@@ -14,4 +14,29 @@ module ApplicationHelper
     request.path
   end
 
+  def index_page?
+    if current_page?(root_path) || request.path == '/'
+      true
+    else
+      false
+    end
+  end
+
+  def members_page?
+    false
+    if current_controller?('registrations') ||
+        current_controller?('sessions') ||
+        current_controller?('passwords') ||
+        current_controller?('confirmations')
+      true
+    end
+  end
+
+  def smart_url_for_member_service
+    if member_signed_in?
+      url_for current_member
+    else
+      url_for new_member_registration_path
+    end
+  end
 end

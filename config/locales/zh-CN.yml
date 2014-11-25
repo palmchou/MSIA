@@ -1,0 +1,56 @@
+zh-CN:
+  msia_title: "澳门软件行业协会"
+  search: "搜索"
+  simple: "简"
+  unsimple: "繁"
+  login: "登陆"
+  register: "注册"
+
+
+  home_page: "主页"
+
+  about_msia: "关于协会"
+  introduction: "协会简介"
+  structure: "组织架构"
+  msia_aim: "协会宗旨"
+
+  latest_news: "最新动态"
+  msia_notify: "公告通知"
+  msia_news: "协会新闻"
+  industry_news: "行业新闻"
+
+  members_area: "会员专区"
+  join_us: "加入我们"
+  newmember_info: "填写表单，立刻注册成为普通会员，获取最新资讯。"
+  newmember_ordownload: "或下载相应表格，跟随指引注册成为正式会员。"
+  newmember_p: "个人入会登记表"
+  newmember_o: "团体（单位）入会登记表"
+  member_login: "会员登录"
+  member_list: "会员名单"
+  discuss: "会员讨论区"
+  new_topic: "发布新话题"
+  confirmation: "邮件确认"
+  resent: "重新发送确认邮件"
+  reset_password: "密码重置"
+  foget_password: "忘记密码"
+  retrieve_password: "找回密码"
+  sent_email_to_retrieve_password: "发送密码找回邮件至我的邮箱"
+
+  recruit: "人才服务"
+  friendly_link: "友情链接"
+  contact_us: "联系我们"
+  help_info: "帮助"
+  about_me: "您好，%{name}"
+  my_info: "我的资料"
+  modify_profile: "修改资料"
+
+  log_out: "登出"
+
+  more_info: "更多资讯"
+
+  previous_label: "上一页"
+  next_label: "下一页"
+
+  will_paginate:
+    previous_label: "上一页"
+    next_label: "下一页"

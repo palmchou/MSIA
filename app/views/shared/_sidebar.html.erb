@@ -1,10 +1,23 @@
-<% if current_controller?('registrations') || current_controller?('sessions') || current_controller?('passwords') || current_controller?('confirmations') %>
+<% if members_page? %>
   <div class="panel panel-default">
     <div class="panel-heading">
       <h3 class="panel-title"><%= t :help_info %></h3>
     </div>
     <div class="panel-body">
       <%= render 'devise/shared/links' %>
+    </div>
+  </div>
+<% end %>
+
+<% if member_signed_in? %>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title"><%= t :about_me, name: current_member.human_name  %></h3>
+    </div>
+    <div class="panel-body">
+      <%= link_to (t :my_info), current_member %><br>
+      <%= link_to (t :modify_profile), edit_member_registration_path %><br>
+      <%= link_to (t :log_out), destroy_member_session_path, method: 'delete' %><br>
     </div>
   </div>
 <% end %>
@@ -53,7 +66,7 @@
     </div>
     <div class="panel-body">
       <% @global_info[:contact_infos].each do |c| %>
-        <%= "#{c.info}: #{c.content}" %><%== '<br>' %>
+        <%= "#{c.name}: #{c.content}" %><%== '<br>' %>
       <% end %>
     </div>
   </div>

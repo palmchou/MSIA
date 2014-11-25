@@ -1,0 +1,81 @@
+zh-TW:
+  msia_title: "澳門軟件行業協會"
+  search: "搜尋"
+  simple: "簡"
+  unsimple: "繁"
+  login: "登入"
+  register: "註冊"
+
+  home_page: "主頁"
+
+  about_msia: "關於協會"
+  introduction: "協會簡介"
+  structure: "組織架構"
+  msia_aim: "協會宗旨"
+
+  latest_news: "最新動態"
+  msia_notify: "公告通知"
+  msia_news: "協會新聞"
+  industry_news: "行業新聞"
+
+  members_area: "會員專區"
+  join_us: "加入我們"
+  newmember_info: "填寫表單，當即註冊成為普通會員，獲取最新資訊。"
+  newmember_ordownload: "或下載相應表格，跟隨指引註冊成為正式會員。"
+  newmember_p: "個人入會登記表"
+  newmember_o: "團體（單位）入會登記表"
+  member_login: "會員登入"
+  member_list: "會員名單"
+  discuss: "會員討論區"
+  new_topic: "發佈新話題"
+  confirmation: "郵件確認"
+  resent: "重新發送確認郵件"
+  reset_password: "密码重置"
+  foget_password: "忘記密碼"
+  retrieve_password: "找回密碼"
+  sent_email_to_retrieve_password: "發送密碼找回郵件至我的郵箱"
+
+
+  recruit: "人才服務"
+  friendly_link: "友情鏈接"
+  contact_us: "聯繫我們"
+  help_info: "幫助"
+  about_me: "您好，%{name}"
+  my_info: "我的資料"
+  modify_profile: "修改資料"
+
+
+  log_out: "登出"
+
+  more_info: "更多資訊"
+
+  previous_label: "上一頁"
+  next_label: "下一頁"
+
+  will_paginate:
+    previous_label: "上一頁"
+    next_label: "下一頁"
+
+  activerecord:
+    models:
+      news:
+        one: '最新动态'
+        other: '最新动态'
+      msia_info:
+        one: '協會資料'
+        other: '協會資料'
+      link:
+        one: '友情鏈接'
+        other: '友情鏈接'
+      member:
+        one: '會員'
+        other: '會員'
+    attributes:
+          news:
+            cate: "新聞分類"
+
+  admin:
+    help:
+      news:
+        cate: "%{help} 设为 1 代表公告通知，2 代表协会新闻，3 代表行业新闻。"
+        content: "%{help} 支持简单 html 标签。"

@@ -10,7 +10,6 @@ class News < ActiveRecord::Base
   INDUSTRY = 3
   BRIEF_LENGTH = 55
 
-
   def self.news_per_page
     10
   end
@@ -45,10 +44,12 @@ class News < ActiveRecord::Base
 
   def brief
     content = strip_tags(self.content)
-    if content.length <= BRIEF_LENGTH
-      self.content
-    else
+    if content.length > BRIEF_LENGTH
       content[0, BRIEF_LENGTH] + '...'
+    else
+      content
     end
   end
+
+
 end

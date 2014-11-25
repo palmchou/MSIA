@@ -12,4 +12,6 @@ News.create(data['news'])
 
 Link.create(data['links'])
 
+Member.create(data['members'])
+
 MsiaInfo.create(data['msiaInfo'])
