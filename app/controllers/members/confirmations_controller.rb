@@ -35,9 +35,10 @@ class Members::ConfirmationsController < Devise::ConfirmationsController
     fax = MsiaInfo.find_by_slug('fax')
     mail = MsiaInfo.find_by_slug('mail')
 
+    links = Link.limit(5)
 
     contact_infos = [address, tel, fax, mail]
 
-    @global_info = { news: news, contact_infos: contact_infos }
+    @global_info = { news: news, contact_infos: contact_infos, links: links }
   end
 end

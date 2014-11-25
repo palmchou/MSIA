@@ -12,6 +12,6 @@
 </div>
 <% @links.each do |l| %>
 <div class="link">
-  <%= link_to l.title, l.url, target: '_blank' %>
+  <%= link_to (cc l.title), l.url, target: '_blank' %>
 </div>
 <% end %>

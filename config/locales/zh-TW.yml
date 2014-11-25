@@ -35,6 +35,7 @@ zh-TW:
   retrieve_password: "找回密碼"
   sent_email_to_retrieve_password: "發送密碼找回郵件至我的郵箱"
 
+  backdoor: "網站管理"
 
   recruit: "人才服務"
   friendly_link: "友情鏈接"
@@ -78,4 +79,4 @@ zh-TW:
     help:
       news:
         cate: "%{help} 设为 1 代表公告通知，2 代表协会新闻，3 代表行业新闻。"
-        content: "%{help} 支持简单 html 标签。圖片寬度請勿超過480px。"
+        content: "%{help} 支持简单 html 标签。圖片寬度請勿超過480px。\n 切勿在鏈接地址中使用中文。"

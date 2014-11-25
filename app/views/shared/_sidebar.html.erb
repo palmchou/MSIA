@@ -15,6 +15,9 @@
       <h3 class="panel-title"><%= t :about_me, name: current_member.human_name  %></h3>
     </div>
     <div class="panel-body">
+      <% if current_member.role == 'admin' %>
+        <%= link_to (t :backdoor), '/admin?locale=zh-TW'  %><br>
+    <% end %>
       <%= link_to (t :my_info), current_member %><br>
       <%= link_to (t :modify_profile), edit_member_registration_path %><br>
       <%= link_to (t :log_out), destroy_member_session_path, method: 'delete' %><br>
@@ -32,7 +35,7 @@
   <ul class="list-group">
     <% @global_info[:news].each do |n| %>
       <li class="list-group-item">
-        <%= link_to n.title, n %>
+        <%= link_to (cc n.title), n %>
       </li>
     <% end %>
   </ul>
@@ -49,9 +52,9 @@
       </h3>
     </div>
     <ul class="list-group">
-      <li class="list-group-item"><a href="http://www.csia.org.cn" target="_blank">中国软件行业协会</a></li>
-      <li class="list-group-item"><a href="http://www.hksia.hk" target="_blank">香港軟件行業協會</a></li>
-      <li class="list-group-item"><a href="http://www.macauit.com" target="_blank">MIT超群科技網絡有限公司</a></li>
+      <% @global_info[:links].each do |l| %>
+        <li class="list-group-item"><%= link_to (cc l.title), l.url, target: '_blank' %></li>
+      <% end %>
     </ul>
   </div>
 <% end %>
@@ -66,7 +69,7 @@
     </div>
     <div class="panel-body">
       <% @global_info[:contact_infos].each do |c| %>
-        <%= "#{c.name}: #{c.content}" %><%== '<br>' %>
+        <%= "#{cc c.name}: #{cc c.content}" %><%== '<br>' %>
       <% end %>
     </div>
   </div>

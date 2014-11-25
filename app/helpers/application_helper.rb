@@ -39,4 +39,14 @@ module ApplicationHelper
       url_for new_member_registration_path
     end
   end
+
+  def cc(content)
+    if I18n.locale.to_s == 'zh-TW'
+      Ropencc.conv('simp_to_trad_v', content)
+    elsif I18n.locale.to_s == 'zh-CN'
+      Ropencc.conv('trad_to_simp', content)
+    else
+      content
+    end
+  end
 end

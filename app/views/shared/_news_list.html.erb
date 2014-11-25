@@ -2,9 +2,9 @@
   <div class="news-list-item msia-list-item">
     <% @news.each do |n| %>
       <div class="news-list-item msia-list-item">
-        <h4><%= link_to n.title, n  %></h4>
+        <h4><%= link_to (cc n.title), n  %></h4>
         <span class="badge pull-right"><%= n.created_at.to_date %></span>
-        <p class="brief"><%= n.brief %></p>
+        <p class="brief"><%= (cc n.brief) %></p>
       </div>
     <% end %>
   </div>

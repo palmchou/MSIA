@@ -55,7 +55,7 @@ gem 'ckeditor', github: 'galetahub/ckeditor', branch: 'master'
 gem 'paperclip', '~> 4.2.0'
 
 # Chinese conversion
-gem 'ropencc'
+gem 'ropencc', github: 'palmchou/ropencc', branch: 'master'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

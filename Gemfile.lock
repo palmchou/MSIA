@@ -8,6 +8,14 @@ GIT
       orm_adapter (~> 0.5.0)
 
 GIT
+  remote: git://github.com/palmchou/ropencc.git
+  revision: 9d3af25710d6ae43490a325c6e4b023620328c6e
+  branch: master
+  specs:
+    ropencc (0.0.5)
+      ffi (~> 1.0)
+
+GIT
   remote: git://github.com/plataformatec/simple_form.git
   revision: 812f1209bc1d0c264f7e15ad2bdaf98eb1883469
   branch: master
@@ -155,8 +163,6 @@ GEM
     remotipart (1.2.1)
     responders (1.1.2)
       railties (>= 3.2, < 4.2)
-    ropencc (0.0.5)
-      ffi (~> 1.0)
     safe_yaml (1.0.4)
     sass (3.2.19)
     sass-rails (4.0.4)
@@ -212,7 +218,7 @@ DEPENDENCIES
   rails (= 4.1.6)
   rails_admin (~> 0.6.5)
   rails_config (~> 0.4.2)
-  ropencc
+  ropencc!
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   simple_form (~> 3.1.0.rc2)!

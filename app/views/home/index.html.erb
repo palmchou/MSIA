@@ -48,7 +48,7 @@
           </h3>
         </div>
         <div class="panel-body">
-          澳門軟件行業協會是一個非牟利的民間學術團體。英文名稱：Macau Software Industry Association，簡稱：澳門軟件協會，成立於2014年。 協會廣泛團結澳門從事軟件開發、研究、教育、應用、保護等領域的專業人士及企業，通過市場調查、資訊交流、諮詢評估、行業自律、知識產權保護、資質認定、教育培訓、出版發布、政策研究、會議展覽等方面的工作，促進澳門軟件產業的健康發展。
+          <%= cc @intro.content %>
         </div>
       </div>
     </div>
@@ -63,7 +63,7 @@
           <% @news[:notice_news].each do |n| %>
             <li class="list-group-item index-news-item">
               <span class="badge"><%= n.created_at.to_date %></span>
-              <%= link_to n.title, n %>
+              <%= link_to (cc n.title), n %>
             </li>
           <% end %>
           <% news_count = @news[:notice_news].count %>
@@ -88,7 +88,7 @@
           <% @news[:msia_news].each do |n| %>
             <li class="list-group-item index-news-item">
               <span class="badge"><%= n.created_at.to_date %></span>
-              <%= link_to n.title, n %>
+              <%= link_to (cc n.title), n %>
             </li>
           <% end %>
           <% news_count = @news[:msia_news].count %>
@@ -113,7 +113,7 @@
           <% @news[:industry_news].each do |n| %>
             <li class="list-group-item index-news-item">
               <span class="badge"><%= n.created_at.to_date %></span>
-              <%= link_to n.title, n %>
+              <%= link_to (cc n.title), n %>
             </li>
           <% end %>
           <% news_count = @news[:industry_news].count %>

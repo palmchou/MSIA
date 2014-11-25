@@ -11,6 +11,7 @@ class HomeController < ApplicationController
               msia_news: msia_news,
               industry_news: industry_news
     }
+    @intro = MsiaInfo.find_by_slug('index_info')
   end
 
   def contact
