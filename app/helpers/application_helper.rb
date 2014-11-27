@@ -34,7 +34,7 @@ module ApplicationHelper
 
   def smart_url_for_member_service
     if member_signed_in?
-      url_for current_member
+      url_for members_path
     else
       url_for new_member_registration_path
     end

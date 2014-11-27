@@ -9,7 +9,10 @@ Rails.application.routes.draw do
 
 
   devise_for :members, controllers: { sessions: "members/sessions",
-                                      registrations: "members/registrations" },
+                                      registrations: "members/registrations",
+                                      passwords: "members/passwords",
+                                      confirmations: "members/confirmations"
+                    },
              path_names: { sign_in: 'login', sign_out: 'logout', sign_up: 'new' }
 
   # Routes for about

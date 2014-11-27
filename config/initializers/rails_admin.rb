@@ -85,4 +85,30 @@ RailsAdmin.config do |config|
       field :content, :ck_editor
     end
   end
+  config.model 'Member' do
+    list do
+      field :email
+      field :member_name
+      field :role
+      field :brief
+      field :phone_number
+      field :address
+      field :show
+      field :created_at
+    end
+    edit do
+      field :email
+      field :password
+      field :member_name
+      field :role, :enum do
+        enum do
+          ['indiv', 'party', 'admin']
+        end
+      end
+      field :brief
+      field :phone_number
+      field :address
+      field :show
+    end
+  end
 end

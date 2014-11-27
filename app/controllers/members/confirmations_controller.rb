@@ -40,5 +40,6 @@ class Members::ConfirmationsController < Devise::ConfirmationsController
     contact_infos = [address, tel, fax, mail]
 
     @global_info = { news: news, contact_infos: contact_infos, links: links }
+    p 'aaaaaaaccount_updateaccount_updateaccount_update________________'
   end
 end

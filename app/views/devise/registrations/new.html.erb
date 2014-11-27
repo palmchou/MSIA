@@ -17,12 +17,18 @@
 <p><%= t :newmember_info %></p>
 <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: {class: 'form-horizontal', role: 'form'}, wrapper: :horizontal_form) do |f| %>
   <%= f.error_notification %>
-  <%= f.input :email, required: true, autofocus: true, html: { class: 'form-control'} %>
-  <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @validatable) %>
-  <%= f.input :password_confirmation, required: true %>
+  <%= f.input :member_name, required: true, autofocus: true, label: (t :member_name), html: {class: 'col-xs-2'} %>
+  <%= f.input :role, required: true, label: (t :choose_role), collection: [[(t :indiv_member), :indiv], [(t :party_member), :party]], as: :radio_buttons, wrapper: :horizontal_radio_and_checkboxes %>
+  <%= f.input :brief, required: true, label: (t :brief), hint:(t :one_word_introduction) %>
+  <%= f.input :phone_number, required: true, label: (t :phone_number) %>
+  <%= f.input :address, required: true, label: (t :address) %>
+  <%= f.input :email, required: true, label: (t :email), html: { class: 'form-control'} %>
+  <%= f.input :show, required: true, label: (t :show_or_not), wrapper: :horizontal_radio_and_checkboxes %>
+  <%= f.input :password, required: true, label: (t :password), hint: ("#{@minimum_password_length} 字符最少" if @validatable) %>
+  <%= f.input :password_confirmation, required: true, label: (t :password_confirmation)%>
   <div class="form-group">
     <div class="col-xs-offset-4 col-xs-6">
-      <%= f.button :submit, "Sign up" %>
+      <%= f.button :submit, (t :submit) %>
     </div>
   </div>
 <% end %>

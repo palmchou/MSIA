@@ -12,7 +12,7 @@
 <% if member_signed_in? %>
   <div class="panel panel-default">
     <div class="panel-heading">
-      <h3 class="panel-title"><%= t :about_me, name: current_member.human_name  %></h3>
+      <h3 class="panel-title"><%= t :greeting  %></h3>
     </div>
     <div class="panel-body">
       <% if current_member.role == 'admin' %>

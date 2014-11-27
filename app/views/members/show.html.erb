@@ -1,0 +1,54 @@
+<% content_for :sub_menu do %>
+  <%= link_to (t :join_us), new_member_registration_path, class: 'list-group-item' %>
+  <%= link_to (t :member_login), new_member_session_path, class: 'list-group-item' %>
+  <%= link_to (t :member_list), members_path, class: 'list-group-item' %>
+  <%= link_to (t :discuss), members_forum_path, class: 'list-group-item' %>
+<% end %>
+
+<% content_for :breadcrumb do %>
+  <li><%= link_to (t :home_page), root_path %></li>
+  <li><%= link_to (t :members_area), new_member_registration_path %></li>
+<% end %>
+<div class="page-header">
+  <h2><%= t :member_info %></h2>
+</div>
+<div class="show_member">
+  <div class="col-xs-4 text-right">
+    <%=	(t :member_name) + ": " %>
+  </div>
+  <div class="col-xs-8">
+    <%= cc @member.member_name %>
+  </div>
+
+  <div class="col-xs-4 text-right">
+    <%=	(t :choose_role) + ": " %>
+  </div>
+  <div class="col-xs-8">
+    <%= t @member.member_type %>
+  </div>
+  <div class="col-xs-4 text-right">
+    <%=	(t :brief) + ": " %>
+  </div>
+  <div class="col-xs-8">
+    <%= cc @member.brief %>
+  </div>
+  <div class="col-xs-4 text-right">
+    <%=	(t :phone_number) + ": " %>
+  </div>
+  <div class="col-xs-8">
+    <%= @member.phone_number %>
+  </div>
+  <div class="col-xs-4 text-right">
+    <%=	(t :address) + ": " %>
+  </div>
+  <div class="col-xs-8">
+    <%= cc @member.address %>
+  </div>
+  <div class="col-xs-4 text-right">
+    <%=	(t :email) + ": " %>
+  </div>
+  <div class="col-xs-8">
+    <%= @member.email %>
+  </div>
+</div>
+

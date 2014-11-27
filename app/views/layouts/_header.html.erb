@@ -9,20 +9,33 @@
       <h4>Macau Software Industry Association</h4>
     </div>
     <div class="col-md-5 column">
-    <ul class="list-inline navbar-right navbar-text" style=" margin-top: 10px; margin-right: 10px; ">
-      <li>
-        <a class="btn-xs" href=<%= "#{current_path}?locale=zh-CN" %>><span class="badge"><%= t :simple %></span></a>
-        <a class="btn-xs" href=<%= "#{current_path}?locale=zh-TW" %>><span class="badge"><%= t :unsimple %></span></a>
-      </li>
-      <li><%= link_to (t :login), new_member_session_path, class: 'btn btn-link' %></li>
-      <li><%= link_to (t :register), new_member_registration_path, class: 'btn btn-link' %></li>
-    </ul>
-    <form class="navbar-form navbar-right" role="search">
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="Search">
-      </div>
-    <button type="submit" class="btn btn-info"><%= t :search %></button>
-    </form>
+    <!--<ul class="list-inline navbar-right navbar-text" style=" margin-top: 10px; margin-right: 10px; ">-->
+      <!--<li>-->
+        <!--<a class="btn-xs" href=<%= "#{current_path}?locale=zh-CN" %>><span class="badge"><%= t :simple %></span></a>-->
+        <!--<a class="btn-xs" href=<%= "#{current_path}?locale=zh-TW" %>><span class="badge"><%= t :unsimple %></span></a>-->
+      <!--</li>-->
+      <!--<li><%#= link_to (t :login), new_member_session_path, class: 'btn btn-link' %></li>-->
+      <!--<li><%#= link_to (t :register), new_member_registration_path, class: 'btn btn-link' %></li>-->
+    <!--</ul>-->
+    <!--<form class="navbar-form navbar-right" role="search">-->
+      <!--<div class="form-group">-->
+        <!--<input type="text" class="form-control" placeholder="Search">-->
+      <!--</div>-->
+    <!--<button type="submit" class="btn btn-info"><%= t :search %></button>-->
+    <!--</form>-->
+      <ul class="list-inline navbar-right navbar-text" style=" margin-top: 10px; margin-right: 10px; ">
+        <li>
+          <a class="" href=<%= "#{current_path}?locale=zh-CN" %>><span class="label label-default">简体中文</span></a>
+          <a class="" href=<%= "#{current_path}?locale=zh-TW" %>><span class="label label-default">繁体中文</span></a>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-info"><%= t :search %></button>
+      </form>
+
     </div>
   </div>
   <%= render 'layouts/nav' %>

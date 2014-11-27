@@ -1,4 +1,7 @@
 zh-CN:
+
+  yes: '是'
+  no: '否'
   msia_title: "澳门软件行业协会"
   search: "搜索"
   simple: "简"
@@ -35,6 +38,9 @@ zh-CN:
   foget_password: "忘记密码"
   retrieve_password: "找回密码"
   sent_email_to_retrieve_password: "发送密码找回邮件至我的邮箱"
+  current_password: "当前密码"
+  new_password: "新密码"
+  change_password: "修改密码"
 
   backdoor: "网站管理"
 
@@ -43,8 +49,28 @@ zh-CN:
   contact_us: "联系我们"
   help_info: "帮助"
   about_me: "您好，%{name}"
+  greeting: "您好，欢迎登入"
   my_info: "我的资料"
   modify_profile: "修改资料"
+
+  member_name: "会员名称"
+  choose_role: "会员类型"
+  indiv_member: "个人会员"
+  party_member: "团体会员"
+  phone_number: "联系电话"
+  address: "联系地址"
+  email: "Email"
+  password: "密码"
+  password_confirmation: "密码确认"
+  show_or_not: "是否公开我的资料"
+  member_info: "会员信息"
+#  hint_for_first_name: "团体会员请留空"
+#  hint_for_last_name: "团体会员请填写全称"
+
+  brief: "简介"
+  one_word_introduction: "一句话简介自己/团体。"
+
+  submit: "提交"
 
   log_out: "登出"
 
@@ -74,9 +100,15 @@ zh-CN:
     attributes:
           news:
             cate: "新聞分類"
+          member:
+            show: "是否公開資料"
+            brief: "會員簡介"
 
   admin:
     help:
       news:
         cate: "%{help} 设为 1 代表公告通知，2 代表协会新闻，3 代表行业新闻。"
         content: "%{help} 支持简单 html 标签。圖片寬度請勿超過480px。\n 切勿在鏈接地址中使用中文。"
+  simple_form:
+      error_notification:
+        member: "请查看以下错误："

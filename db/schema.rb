@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141125183351) do
+ActiveRecord::Schema.define(version: 20141126043201) do
 
   create_table "ckeditor_assets", force: true do |t|
     t.string   "data_file_name",               null: false
@@ -35,8 +35,8 @@ ActiveRecord::Schema.define(version: 20141125183351) do
   end
 
   create_table "members", force: true do |t|
-    t.string   "email",                  default: "", null: false
-    t.string   "encrypted_password",     default: "", null: false
+    t.string   "email",                             default: "",    null: false
+    t.string   "encrypted_password",                default: "",    null: false
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
@@ -46,7 +46,12 @@ ActiveRecord::Schema.define(version: 20141125183351) do
     t.string   "unconfirmed_email"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "role"
+    t.string   "role",                   limit: 6
+    t.string   "member_name",            limit: 10,                 null: false
+    t.string   "brief",                  limit: 64
+    t.string   "phone_number",           limit: 11,                 null: false
+    t.string   "address",                limit: 64,                 null: false
+    t.boolean  "show",                              default: false, null: false
   end
 
   add_index "members", ["confirmation_token"], name: "index_members_on_confirmation_token", unique: true, using: :btree

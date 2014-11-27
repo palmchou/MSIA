@@ -14,5 +14,6 @@
   <h2><%= cc @news.title %></h2>
 </div>
 <div class="news-content">
+  <div class="pull-right"><%= @news.created_at.to_date %></div><br>
   <%= sanitize(cc @news.content) %>
 </div>

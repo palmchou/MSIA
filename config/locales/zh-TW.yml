@@ -1,4 +1,6 @@
 zh-TW:
+  yes: "是"
+  no: "否"
   msia_title: "澳門軟件行業協會"
   search: "搜尋"
   simple: "簡"
@@ -36,15 +38,36 @@ zh-TW:
   sent_email_to_retrieve_password: "發送密碼找回郵件至我的郵箱"
 
   backdoor: "網站管理"
-
+  member_info: "會員資料"
   recruit: "人才服務"
   friendly_link: "友情鏈接"
   contact_us: "聯繫我們"
   help_info: "幫助"
-  about_me: "您好，%{name}"
+  greeting: "您好，歡迎登入"
   my_info: "我的資料"
   modify_profile: "修改資料"
+  show_or_not: "是否公開我的資料"
+  member_name: "會員名稱"
+  choose_role: "會員類型"
+  indiv_member: "個人會員"
+  party_member: "團體會員"
+  phone_number: "移動電話號碼"
+  address: "聯繫地址"
+  email: "Email"
+  password: "密碼"
+  password_confirmation: "密碼確認"
+  current_password: "當前密碼"
+  new_password: "新密碼"
+  change_password: "修改密碼"
 
+#
+#  hint_for_last_name: "團體會員請填寫全稱"
+#  hint_for_first_name: "團體會員請留空"
+
+  brief: "簡介"
+  one_word_introduction: "一句話簡介自己/團體。"
+
+  submit: "送出"
 
   log_out: "登出"
 
@@ -74,9 +97,15 @@ zh-TW:
     attributes:
           news:
             cate: "新聞分類"
+          member:
+            show: "是否公開資料"
+            brief: "會員簡介"
 
   admin:
     help:
       news:
-        cate: "%{help} 设为 1 代表公告通知，2 代表协会新闻，3 代表行业新闻。"
+        cate: "%{help} 設為 1 代表公告通知，2 代表協會新聞，3 代表行業新聞。"
         content: "%{help} 支持简单 html 标签。圖片寬度請勿超過480px。\n 切勿在鏈接地址中使用中文。"
+  simple_form:
+      error_notification:
+        member: "請查看以下錯誤:"

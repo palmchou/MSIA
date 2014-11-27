@@ -376,3 +376,8 @@ members:
     confirmation_sent_at: "2014-11-23 07:49:04"
     confirmed_at: "2014-11-23 07:49:10"
     role: "admin"
+    member_name: "Admin"
+    show: false
+    brief: '簡介'
+    phone_number: 000000
+    address: 'address'
