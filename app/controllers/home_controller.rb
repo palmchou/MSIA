@@ -4,6 +4,7 @@ class HomeController < ApplicationController
 
 
   def index
+    @slideshows = Slideshow.order(created_at: :desc)
     notice_news = News.notice_news.limit(3)
     msia_news = News.msia_news.limit(3)
     industry_news = News.industry_news.limit(3)

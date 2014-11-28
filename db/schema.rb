@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141126043201) do
+ActiveRecord::Schema.define(version: 20141128073106) do
 
   create_table "ckeditor_assets", force: true do |t|
     t.string   "data_file_name",               null: false
@@ -72,6 +72,17 @@ ActiveRecord::Schema.define(version: 20141126043201) do
     t.integer  "cate",       limit: 1,   null: false
     t.string   "title",      limit: 127, null: false
     t.text     "content",                null: false
+  end
+
+  create_table "slideshows", force: true do |t|
+    t.string   "slide_file_name"
+    t.string   "slide_content_type"
+    t.integer  "slide_file_size"
+    t.datetime "slide_updated_at"
+    t.string   "title",              limit: 32
+    t.string   "url",                limit: 128
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end

@@ -49,4 +49,6 @@ Rails.application.routes.draw do
   # Routes for contact us page
   get 'contact', to: 'home#contact', as: 'contact_us'
 
+  resources :slideshows, only: [:new, :create, :index]
+
 end

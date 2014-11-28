@@ -21,7 +21,7 @@ RailsAdmin.config do |config|
 
   ### More at https://github.com/sferik/rails_admin/wiki/Base-configuration
 
-  config.included_models = ['Link', 'Member', 'MsiaInfo', 'News']
+  config.included_models = ['Link', 'Member', 'MsiaInfo', 'News', 'Slideshow']
 
   config.actions do
     dashboard                     # mandatory

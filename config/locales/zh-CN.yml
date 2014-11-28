@@ -109,6 +109,8 @@ zh-CN:
       news:
         cate: "%{help} 设为 1 代表公告通知，2 代表协会新闻，3 代表行业新闻。"
         content: "%{help} 支持简单 html 标签。圖片寬度請勿超過480px。\n 切勿在鏈接地址中使用中文。"
+      slideshow:
+        slide: "%{help} 上載前請剪切圖片長寬為 700x350, 否則首頁顯示不正常。"
   simple_form:
       error_notification:
         member: "请查看以下错误："
