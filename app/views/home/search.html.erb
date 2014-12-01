@@ -1,0 +1,6 @@
+<% content_for :breadcrumb do %>
+  <li><%= link_to (t :home_page), root_path %></li>
+  <li class="active"><%= t :search %></li>
+<% end %>
+
+<%= render 'shared/news_list' %>

@@ -1,41 +1,27 @@
-  <div class="row">
-    <div class="col-md-2 logo-container">
-      <a href="<%= url_for root_path %>">
-        <%= image_tag 'logo.png', id: 'logo'%>
-      </a>
-    </div>
-    <div class="col-md-5 title">
-      <h1><strong><%= t :msia_title %></strong></h1>
-      <h4>Macau Software Industry Association</h4>
-    </div>
-    <div class="col-md-5 column">
-    <!--<ul class="list-inline navbar-right navbar-text" style=" margin-top: 10px; margin-right: 10px; ">-->
-      <!--<li>-->
-        <!--<a class="btn-xs" href=<%= "#{current_path}?locale=zh-CN" %>><span class="badge"><%= t :simple %></span></a>-->
-        <!--<a class="btn-xs" href=<%= "#{current_path}?locale=zh-TW" %>><span class="badge"><%= t :unsimple %></span></a>-->
-      <!--</li>-->
-      <!--<li><%#= link_to (t :login), new_member_session_path, class: 'btn btn-link' %></li>-->
-      <!--<li><%#= link_to (t :register), new_member_registration_path, class: 'btn btn-link' %></li>-->
-    <!--</ul>-->
-    <!--<form class="navbar-form navbar-right" role="search">-->
-      <!--<div class="form-group">-->
-        <!--<input type="text" class="form-control" placeholder="Search">-->
-      <!--</div>-->
-    <!--<button type="submit" class="btn btn-info"><%= t :search %></button>-->
-    <!--</form>-->
-      <ul class="list-inline navbar-right navbar-text" style=" margin-top: 10px; margin-right: 10px; ">
-        <li>
-          <a class="" href=<%= "#{current_path}?locale=zh-CN" %>><span class="label label-default">简体中文</span></a>
-          <a class="" href=<%= "#{current_path}?locale=zh-TW" %>><span class="label label-default">繁体中文</span></a>
-        </li>
-      </ul>
-      <form class="navbar-form navbar-right" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-info"><%= t :search %></button>
-      </form>
-
-    </div>
+<div class="row">
+  <div class="col-xs-2 logo-container">
+    <a href="<%= url_for root_path %>">
+      <%= image_tag 'logo.png', id: 'logo'%>
+    </a>
   </div>
-  <%= render 'layouts/nav' %>
+  <div class="col-xs-5 title">
+    <h1><strong><%= t :msia_title %></strong></h1>
+    <h4>Macau Software Industry Association</h4>
+  </div>
+  <div class="col-xs-5 column">
+    <ul class="list-inline navbar-right navbar-text" style=" margin-top: 10px; margin-right: 10px; ">
+      <li>
+        <a class="" href=<%= "#{current_path}?locale=zh-CN" %>><span class="label label-default">简体中文</span></a>
+        <a class="" href=<%= "#{current_path}?locale=zh-TW" %>><span class="label label-default">繁体中文</span></a>
+      </li>
+    </ul>
+    <%= form_tag(search_path, method: 'post', class:'navbar-form navbar-right', role: 'search') do %>
+      <div class="form-group">
+        <%= text_field_tag(:s, nil, class: 'form-control', placeholder: 'Search') %>
+      </div>
+        <%= submit_tag((t :search), class: 'btn btn-info') %>
+    <% end %>
+
+  </div>
+</div>
+<%= render 'layouts/nav' %>

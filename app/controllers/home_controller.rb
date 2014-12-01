@@ -18,4 +18,8 @@ class HomeController < ApplicationController
   def contact
 
   end
+
+  def search
+    @news = News.search(params[:s]).paginated(current_page)
+  end
 end

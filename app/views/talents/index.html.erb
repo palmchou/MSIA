@@ -10,12 +10,10 @@
 <div class="page-header">
   <h2><%= t :recruit %></h2>
 </div>
-<div class='link'>
-  <a href="#">澳門軟件行業協會招聘網站管理員</a>
-</div>
-<div class='link'>
-  <a href="#">MIT超群科技網絡招聘前端工程師</a>
-</div>
-<div class='link'>
-  <a href="#">MIT超群科技網絡招聘美工</a>
-</div>
+
+<%= t :no_info if @talents.nil? %>
+<% @talents.each do |t| %>
+  <div class='link'>
+    <%= link_to (cc t.title), t %>
+  </div>
+<% end %>

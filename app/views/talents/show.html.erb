@@ -1,0 +1,15 @@
+<% content_for :sub_menu do %>
+  <%= link_to (t :recruit), talents_path , class: 'list-group-item active'%>
+<% end %>
+
+<% content_for :breadcrumb do %>
+  <li><%= link_to (t :home_page), root_path %></li>
+  <li class="active"><%= t :recruit %></li>
+<% end %>
+
+<div class="page-header">
+  <h2><%= cc @talent.title %></h2>
+</div>
+<div class="talents-content">
+  <%= sanitize(cc @talent.content) %>
+</div>

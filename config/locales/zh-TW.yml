@@ -60,6 +60,7 @@ zh-TW:
   new_password: "新密碼"
   change_password: "修改密碼"
 
+  no_info: "暫無相關資訊"
 #
 #  hint_for_last_name: "團體會員請填寫全稱"
 #  hint_for_first_name: "團體會員請留空"
@@ -94,6 +95,9 @@ zh-TW:
       member:
         one: '會員'
         other: '會員'
+      talent:
+        one: '人才服務'
+        other: '人才服務'
     attributes:
           news:
             cate: "新聞分類"

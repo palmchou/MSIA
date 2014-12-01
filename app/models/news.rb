@@ -51,5 +51,8 @@ class News < ActiveRecord::Base
     end
   end
 
-
+  def self.search(s)
+    str = '%' + s + '%'
+    News.where("content LIKE ?", str)
+  end
 end

@@ -27,7 +27,7 @@ Rails.application.routes.draw do
     get 'msia', to: 'news#msia', as: 'news_msia'
     get 'industry', to: 'news#industry', as: 'news_industry'
   end
-  resources :news
+  resources :news, only: [:index, :show]
 
   # Routes for recommend software products
   # resources :recommendations
@@ -41,7 +41,7 @@ Rails.application.routes.draw do
 
 
   # Routes for talents service
-  resources :talents
+  resources :talents, only: [:index, :show]
 
   # Routes for friendly links
   resources :links, only: :index
@@ -49,6 +49,7 @@ Rails.application.routes.draw do
   # Routes for contact us page
   get 'contact', to: 'home#contact', as: 'contact_us'
 
-  resources :slideshows, only: [:new, :create, :index]
+  match 'search', to: 'home#search', via: [:post]
+
 
 end

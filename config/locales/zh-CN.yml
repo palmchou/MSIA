@@ -79,6 +79,10 @@ zh-CN:
   previous_label: "上一页"
   next_label: "下一页"
 
+  no_info: "暂无相关信息"
+
+
+
   will_paginate:
     previous_label: "上一页"
     next_label: "下一页"
