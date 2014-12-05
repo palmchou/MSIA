@@ -51,5 +51,4 @@ Rails.application.configure do
 
   # Command path for image magick
   Paperclip.options[:command_path] = "/usr/local/bin/"
-
 end

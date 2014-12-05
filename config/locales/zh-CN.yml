@@ -9,6 +9,10 @@ zh-CN:
   login: "登陆"
   register: "注册"
 
+  remember_me: "记住我"
+
+  sign_in_email: "登陆邮箱"
+
 
   home_page: "主页"
 
